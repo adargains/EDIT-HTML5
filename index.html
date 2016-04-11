@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="pt">
-    <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -26,18 +27,41 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script>
         (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-            e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
             e.src = '//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e, r);
         }(window, document, 'script', 'ga'));
-        ga('create', 'UA-71197701-1', 'auto'); ga('send', 'pageview');
+        ga('create', 'UA-71197701-1', 'auto');
+        ga('send', 'pageview');
     </script>
-    </head>
-    <body class="single">
-        <!--SCRIPT-->
-        <script type="text/javascript" src="scripts/vendor/jquery-2.1.4.min.js"></script>
-        <script src="scripts/main.js"></script>
-    </body>
-    </html>
+</head>
+
+<body>
+    <div class="video">
+        <video autoplay loop muted>
+            <source src="short.mp4" type="video/mp4"> nope.
+        </video>
+    </div>
+
+    <div class="texto">
+        <h1>TEXTO</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ipsam molestiae ullam dolorum, harum obcaecati rerum ipsum eum ex dicta odio maxime laboriosam eius impedit explicabo vitae voluptatem facere quisquam?</p>
+    </div>
+
+    <div class="cartao">
+        blablabla
+    </div>
+
+    <!--SCRIPT-->
+    <script type="text/javascript" src="scripts/vendor/jquery-2.1.4.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
