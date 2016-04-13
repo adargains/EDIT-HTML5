@@ -1,36 +1,168 @@
 body {
-    margin: 0;
+	margin:0;
+	padding: 0;
 }
 
-.video {
+.hero {
+	height: 617px;
+	width: 100%;
+	text-align: center;	background:url('http://www.fullwidehd.com/wp-content/uploads/2015/10/abstract-wallpaper-wonderful-background.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.hero h1, .hero h2 {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+    color: #444;
+}
+
+.hero h1 {
+	font-size: 100px;
+	margin-bottom: 15px;
+	font-family: 'Lato',calibri, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.hero h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-family: sans;
+	font-style: italic;
+	font-weight: 300;
+}
+
+.hero .prev, .hero .next {
+    
+	position: absolute;
+	width: 50px;
+	line-height: 100px;
+	color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,.3);
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.hero .prev {
+	left: 0px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+.hero .next {
+	right: 0px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: -2px 2px 20px rgba(0,0,0,.2);
+}
+
+.hero article {
+	position: relative;
+    width: 90%;
+    margin: auto;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.btn {
+	padding: 0 30px;
+	display: inline-block;
+	line-height: 60px;
+	background-color: #e80;
+	color: #eee;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.4);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #d70;
+}
+
+.hero .btn {
+	margin-top: 35px;
+}
+
+.pagina {
+    width: 1180px;
+    margin: 50px auto;
+}
+
+.grelha ul {
     width: 100%;
-    z-index: 1;
+    height: 100%;
+    list-style: none;
+    padding: 0;
 }
 
-video {
-    width: 100%;
-}
-
-.texto {
-    position: absolute;
-    width: 80%;
+.grelha ul li {
+    float: left;
+    height: 295px;
+    width: 295px;
+    padding: 30px 10px;
     text-align: center;
-    z-index: 9;
-    font-family: sans-serif;
-    color: #ddd;
-    top: 500px;
+    box-sizing: border-box;
 }
 
-.texto h1 {
-    font-size: 4em;
+ .grelha ul li:first-child {
+    height: 590px;
 }
 
-.texto p {
-    font-size: 2em;
+
+.grelha ul li:nth-child(7) {
+    height: 590px;
+    float: right;
 }
 
-.cartao {
-    background: red;
-    width: 80%;
+.bloco-grande {
+    background-color: #d2d2d2;
+}
+
+.bloco-twitter {
+    background-color: #bbb;
+}
+
+.bloco-produto {
+    background-color: #606060;
+}
+
+.bloco-venda {
+    background-color: #cacaca;
+}
+
+.bloco-vazio {
+    background-color: #c2c2c2;
+}
+
+.sub {
+    clear: both;
+    text-align: center;
+}
+
+.enviar {
+    width: 570px;
+    height: 56px;
     margin: 0 auto;
+}
+
+input {
+    height: 56px;
+    width: 474px;
+}
+.add {
+    height: 56px;
+    width: 96px;
 }
