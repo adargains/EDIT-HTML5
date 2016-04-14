@@ -35,11 +35,11 @@ body {
 	font-weight: 300;
 }
 
-.hero .prev, .hero .next {
+.prev, .next {
     
 	position: absolute;
 	width: 50px;
-	line-height: 100px;
+	line-height: 118px;
 	color: rgba(0,0,0,0);
 	background-color: rgba(0,0,0,.3);
 	top: 50%;
@@ -50,13 +50,13 @@ body {
 	transform: translateY(-50%);
 }
 
-.hero .prev {
+.prev {
 	left: 0px;
     border-radius: 0 20px 20px 0;
     box-shadow: 2px 2px 20px rgba(0,0,0,.2);
 }
 
-.hero .next {
+.next {
 	right: 0px;
     border-radius: 20px 0 0 20px;
     box-shadow: -2px 2px 20px rgba(0,0,0,.2);
@@ -150,19 +150,111 @@ body {
 .sub {
     clear: both;
     text-align: center;
+    padding-top: 146px;
+    margin-bottom: 132px;
+}
+
+.sub h3 {
+    font-size: 36px;
+    font-family: lato, sans-serif;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.sub h4 {
+    font-size: 18px;
+    font-family: georgia;
+    font-style: italic;
+    margin-top: 0;
+    font-weight: normal;
 }
 
 .enviar {
     width: 570px;
     height: 56px;
-    margin: 0 auto;
+    margin: 55px auto 0 auto;
 }
 
-input {
-    height: 56px;
-    width: 474px;
+.inputadd {
+    float: left;
+    height: 52px;
+    width: 450px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 24px;
 }
+
 .add {
-    height: 56px;
-    width: 96px;
+    float: left;
+    line-height: 56px;
+    width: 95px;
+    margin: 0;
+    background-color: #f68236;
+    color: #fff;
+    font-size: 18px;
+    font-family: lato, sans-serif;
+}
+
+.barracinza {
+    height: 118px;
+    background-color: #bbb;
+    position: relative;
+    margin-bottom: 47px;
+}
+
+.footer {
+    height: 300px;
+    overflow: hidden;
+}
+
+.footer arcticle:not(:last-child) {
+    float: left;
+    width: 279px;
+    height: 160px;
+    margin-right: 15px;
+    border-right: 1px solid #ddd;
+}
+
+.social {
+    float: left;
+    width: 280px;
+    height: 160px;
+    margin-right: 15px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin: 0 0 8px 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 12px;
+    font-family: lato, sans-serif;
+}
+
+#titulo-lista {
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.redesocial {
+    margin-top: 20px;
+}
+
+.redesocial-icone {
+    margin-right: 14px;
 }
