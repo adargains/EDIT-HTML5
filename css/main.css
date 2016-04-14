@@ -1,10 +1,95 @@
 font-family: 'Lato', sans-serif;
 
+html {
+}
+
 body {
-	margin:0;
+	margin: 0;
 	padding: 0;
 }
 
+/*HEADER*/
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    font-family: 'Lato', sans-serif;
+}
+
+header .wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    line-height: 114px;
+    overflow: hidden;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+header .wrapper #logo {
+    display: block;
+    position: relative;
+    float: left;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    line-height: 42px;
+    top: 35px;
+    text-decoration: none;
+}
+
+header .wrapper nav {
+    float: left;
+    width: 700px;
+
+}
+
+header .wrapper nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header .wrapper nav ul li {
+    float: left;
+}
+
+header .wrapper nav ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #cecece;
+    margin-left: 52px;
+}
+
+header .wrapper aside {
+	float: right;
+	overflow: hidden;
+    padding-right: 32px;
+}
+
+header .wrapper aside ul {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+header .wrapper aside ul li {
+    float: left;
+}
+
+header .wrapper aside ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #cecece;
+    margin-left: 52px;
+}
+/*HEADER*/
+
+
+/*HERO*/
 .hero {
 	height: 617px;
 	width: 100%;
@@ -14,7 +99,6 @@ body {
 	background-size: cover;
 	background-position: center center;
 	position: relative;
-/*    b2 a 4c*/
 }
 
 .hero h1, .hero h2 {
@@ -42,7 +126,6 @@ body {
 
 .prev, .next {
 	position: absolute;
-    display: inline-block;
 	width: 39px;
 	line-height: 59px;
 	background-color: #cfcfcf;
@@ -50,17 +133,13 @@ body {
     color: #fff;
     font-size: 30px;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+    text-align: center;
+    -webkit-transform: translateY(-5%) scale(1,2);
+	-moz-transform: translateY(-50%) scale(1,2);
+	-o-transform: translateY(-50%) scale(1,2);
+	-ms-transform: translateY(-50%) scale(1,2);
+	transform: translateY(-50%) scale(1,2);
 
-    -webkit-transform:scale(1,2); /* Safari and Chrome */
-    -moz-transform:scale(1,2); /* Firefox */
-    -ms-transform:scale(1,2); /* IE 9 */
-    -o-transform:scale(1,2); /* Opera */
-    transform:scale(1,2); /* W3C */
 }
 
 .prev:hover, .next:hover {
@@ -69,12 +148,10 @@ body {
 
 .prev {
 	left: 0px;
-    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
 }
 
 .next {
 	right: 0px;
-    box-shadow: -2px 2px 20px rgba(0,0,0,.2);
 }
 
 .hero article {
@@ -90,17 +167,16 @@ body {
 }
 
 .btn {
-	padding: 0 30px;
+	padding: 0 40px;
 	display: inline-block;
 	line-height: 60px;
-	background-color: #6c6c6c;
-	color: #eee;
+	background-color: #6a6a6a;
+	color: #fff;
 	font-size: 14px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
-    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .btn:hover {
@@ -137,12 +213,17 @@ body {
     background-color: #fff;
     border: 1px solid #fff;
 }
+/*HERO*/
+
+
 
 .pagina {
     width: 1180px;
     margin: 50px auto;
 }
 
+
+/*GRELHA*/
 .grelha ul {
     width: 100%;
     height: 100%;
@@ -188,15 +269,18 @@ body {
 .bloco-vazio {
     background-color: #c2c2c2;
 }
+/*GRELHA*/
 
-.sub {
+
+/*SIGN UP*/
+.signup {
     clear: both;
     text-align: center;
     padding-top: 146px;
     margin-bottom: 132px;
 }
 
-.sub h3 {
+.signup h3 {
     font-size: 36px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
@@ -205,7 +289,7 @@ body {
     margin-bottom: 20px;
 }
 
-.sub h4 {
+.signup h4 {
     font-size: 18px;
     font-family: georgia;
     font-style: italic;
@@ -238,14 +322,19 @@ body {
     font-size: 18px;
     font-family: lato, sans-serif;
 }
+/*SIGN UP*/
 
+/*BARRA CINZA*/
 .barracinza {
     height: 118px;
     background-color: #bbb;
     position: relative;
     margin-bottom: 47px;
 }
+/*BARRA CINZA*/
 
+
+/*FOOTER*/
 .footer {
     height: 300px;
     overflow: hidden;
@@ -302,3 +391,4 @@ body {
 .redesocial-icone {
     margin-right: 14px;
 }
+/*FOOTER*/
