@@ -1,14 +1,14 @@
-font-family: 'Lato', sans-serif;
-
-html {
-}
+font-family: 'Lato',
+sans-serif;
+html {}
 
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-/*HEADER*/
+
+/* INICIO HEADER*/
 header {
     position: absolute;
     width: 100%;
@@ -40,8 +40,7 @@ header .wrapper #logo {
 
 header .wrapper nav {
     float: left;
-    width: 700px;
-
+    width: 600px;
 }
 
 header .wrapper nav ul {
@@ -63,11 +62,15 @@ header .wrapper nav ul li a {
 }
 
 header .wrapper aside {
-	float: right;
-	overflow: hidden;
+    float: right;
+    position: relative;
 }
 
-header .wrapper aside ul {
+header .wrapper aside .usuario {
+    float: left;
+}
+
+header .wrapper aside .usuario ul {
     float: left;
     list-style: none;
     padding: 0;
@@ -75,110 +78,161 @@ header .wrapper aside ul {
     overflow: hidden;
 }
 
-header .wrapper aside ul li {
+header .wrapper aside .usuario ul li {
     float: left;
 }
 
-header .wrapper aside ul li a {
+header .wrapper aside .usuario ul li a {
     text-decoration: none;
     font-size: 14px;
     color: #cecece;
-    margin-left: 52px;
+    margin-right: 52px;
 }
 
-header .wrapper aside ul li img {
+
+/* 
+fazer icones do usuario e cesta com before 
+*/
+
+
+header .wrapper aside .usuario ul li img {
     vertical-align: middle;
+    margin-right: 5px;
+} 
+
+header .wrapper aside .busca {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #979797;
+    overflow: hidden;
 }
-/*HEADER*/
 
-
-/*HERO*/
-.hero {
-	height: 617px;
-	width: 100%;
-	text-align: center;
-    background: linear-gradient(#4c4c4c, #b1b1b1);
-/*    background:url('http://www.fullwidehd.com/wp-content/uploads/2015/10/abstract-wallpaper-wonderful-background.jpg');*/
-	background-size: cover;
-	background-position: center center;
+header .wrapper aside .busca a.submit {
+    display: block;
+	width: 40px;
+	height: 40px;
 	position: relative;
+	float: right;
+    border-left: 1px solid #979797;
+    background: url("../img/search.png") no-repeat 10px 10px;
 }
 
-.hero h1, .hero h2 {
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
+header .wrapper aside .busca #searchinput {
+    line-height: 40px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    border: 0;
+    background-color: #eee;
+    font-size: 16px;
+}
+
+header .wrapper aside .busca:hover #searchinput {
+    width: 300px;
+    padding: 0 0 0 10px;
+}
+
+header .wrapper aside .busca:hover {
+    width: 349px;
+}
+
+/*FIM HEADER*/
+
+
+
+/*INICIO HERO*/
+.hero {
+    height: 617px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(#4c4c4c, #b1b1b1);
+    /*    background:url('http://www.fullwidehd.com/wp-content/uploads/2015/10/abstract-wallpaper-wonderful-background.jpg');*/
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.hero h1,
+.hero h2 {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
     color: #fff;
 }
 
 .hero h1 {
-	font-size: 72px;
-	margin-bottom: 15px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
+    font-size: 72px;
+    margin-bottom: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .hero h2 {
-	font-size: 24px;
-	margin-bottom: 20px;
-	font-family: georgia;
-	font-style: italic;
-	font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: georgia;
+    font-style: italic;
+    font-weight: 300;
 }
 
-.prev, .next {
-	position: absolute;
-	width: 39px;
-	line-height: 59px;
-	background-color: #cfcfcf;
+.prev,
+.next {
+    position: absolute;
+    width: 39px;
+    line-height: 59px;
+    background-color: #cfcfcf;
     text-decoration: none;
     color: #fff;
     font-size: 30px;
-	top: 50%;
+    top: 50%;
     text-align: center;
-    -webkit-transform: translateY(-5%) scale(1,2);
-	-moz-transform: translateY(-50%) scale(1,2);
-	-o-transform: translateY(-50%) scale(1,2);
-	-ms-transform: translateY(-50%) scale(1,2);
-	transform: translateY(-50%) scale(1,2);
-
+    -webkit-transform: translateY(-5%) scale(1, 2);
+    -moz-transform: translateY(-50%) scale(1, 2);
+    -o-transform: translateY(-50%) scale(1, 2);
+    -ms-transform: translateY(-50%) scale(1, 2);
+    transform: translateY(-50%) scale(1, 2);
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: #ddd;
 }
 
 .prev {
-	left: 0px;
+    left: 0px;
 }
 
 .next {
-	right: 0px;
+    right: 0px;
 }
 
 .hero article {
-	position: relative;
+    position: relative;
     width: 90%;
     margin: auto;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .btn {
-	padding: 0 40px;
-	display: inline-block;
-	line-height: 60px;
-	background-color: #6a6a6a;
-	color: #fff;
-	font-size: 14px;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-family: 'Lato', sans-serif;
+    padding: 0 40px;
+    display: inline-block;
+    line-height: 60px;
+    background-color: #6a6a6a;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
     border-radius: 3px;
 }
 
@@ -187,8 +241,7 @@ header .wrapper aside ul li img {
 }
 
 .hero .btn {
-	margin-top: 35px;
-
+    margin-top: 35px;
 }
 
 .hero ul {
@@ -217,22 +270,26 @@ header .wrapper aside ul li img {
     background-color: #fff;
     border: 1px solid #fff;
 }
-/*HERO*/
+/*FIM HERO*/
 
 
-
-.pagina {
+.wrapper {
     width: 1180px;
     margin: 50px auto;
 }
 
 
-/*GRELHA*/
+/*INICIO GRELHA*/
+.grelha {
+    overflow: hidden;
+    margin-bottom: 145px;
+}
 .grelha ul {
     width: 100%;
     height: 100%;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .grelha ul li {
@@ -244,10 +301,9 @@ header .wrapper aside ul li img {
     box-sizing: border-box;
 }
 
- .grelha ul li:first-child {
+.grelha ul li:first-child {
     height: 590px;
 }
-
 
 .grelha ul li:nth-child(7) {
     height: 590px;
@@ -273,14 +329,13 @@ header .wrapper aside ul li img {
 .bloco-vazio {
     background-color: #c2c2c2;
 }
-/*GRELHA*/
+/* FIM GRELHA*/
 
 
-/*SIGN UP*/
+/*INICIO SIGN UP*/
 .signup {
     clear: both;
     text-align: center;
-    padding-top: 146px;
     margin-bottom: 132px;
 }
 
@@ -326,19 +381,20 @@ header .wrapper aside ul li img {
     font-size: 18px;
     font-family: lato, sans-serif;
 }
-/*SIGN UP*/
+/*FIM SIGN UP*/
 
-/*BARRA CINZA*/
+
+/*INICIO BARRA CINZA*/
 .barracinza {
     height: 118px;
     background-color: #bbb;
     position: relative;
     margin-bottom: 47px;
 }
-/*BARRA CINZA*/
+/*FIM BARRA CINZA*/
 
 
-/*FOOTER*/
+/*INICIO FOOTER*/
 .footer {
     height: 300px;
     overflow: hidden;
@@ -395,4 +451,4 @@ header .wrapper aside ul li img {
 .redesocial-icone {
     margin-right: 14px;
 }
-/*FOOTER*/
+/*FIM FOOTER*/
