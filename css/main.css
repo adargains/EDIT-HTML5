@@ -65,7 +65,6 @@ header .wrapper nav ul li a {
 header .wrapper aside {
 	float: right;
 	overflow: hidden;
-    padding-right: 32px;
 }
 
 header .wrapper aside ul {
@@ -86,6 +85,10 @@ header .wrapper aside ul li a {
     color: #cecece;
     margin-left: 52px;
 }
+
+header .wrapper aside ul li img {
+    vertical-align: middle;
+}
 /*HEADER*/
 
 
@@ -94,7 +97,7 @@ header .wrapper aside ul li a {
 	height: 617px;
 	width: 100%;
 	text-align: center;
-    background: linear-gradient(#4c4c4c, #b2b2b2);
+    background: linear-gradient(#4c4c4c, #b1b1b1);
 /*    background:url('http://www.fullwidehd.com/wp-content/uploads/2015/10/abstract-wallpaper-wonderful-background.jpg');*/
 	background-size: cover;
 	background-position: center center;
