@@ -1,7 +1,3 @@
-font-family: 'Lato',
-sans-serif;
-html {}
-
 body {
     margin: 0;
     padding: 0;
@@ -90,38 +86,50 @@ header .wrapper aside .usuario ul li a {
     margin-right: 52px;
 }
 
-header .wrapper aside .usuario ul li img {
-    vertical-align: middle;
+header .wrapper aside .usuario ul li a:hover {
+    text-decoration: underline;
+}
+
+header .wrapper aside .usuario ul li a[href*="user"]:before {
+    font-family: FontAwesome;
+    content: "\f007";
     margin-right: 5px;
-} 
+}
+
+header .wrapper aside .usuario ul li a[href*="basket"]:before {
+    font-family: FontAwesome;
+    content: "\f290";
+    margin-right: 5px;
+}
 
 header .wrapper aside .busca {
     position: absolute;
     right: 0;
-    top: 40px;
-    height: 40px;
-    width: 40px;
+    top: 36px;
+    height: 42px;
+    width: 42px;
     border: 1px solid #979797;
     overflow: hidden;
+    box-sizing: content-box;
     transition: width 1s ease-out;
 }
 
 header .wrapper aside .busca a.submit {
     display: block;
-	width: 40px;
-	height: 40px;
-	position: relative;
-	float: right;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    float: right;
     border-left: 1px solid #979797;
     background: url("../img/search.png") no-repeat 10px 10px;
 }
 
 header .wrapper aside .busca #searchinput {
-    line-height: 40px;
+    line-height: 42px;
     width: 0;
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 42px;
     border: 0;
     font-size: 16px;
     background: #eee;
@@ -137,9 +145,7 @@ header .wrapper aside .busca:hover #searchinput {
 header .wrapper aside .busca:hover {
     width: 349px;
 }
-
 /*FIM HEADER*/
-
 
 
 /*INICIO HERO*/
@@ -153,15 +159,15 @@ header .wrapper aside .busca:hover {
     position: relative;
 }
 
-.hero h1,
-.hero h2 {
+.hero article h1,
+.hero article h2 {
     width: 80%;
     text-align: center;
     margin: 0 auto;
     color: #fff;
 }
 
-.hero h1 {
+.hero article h1 {
     font-size: 72px;
     margin-bottom: 15px;
     font-family: 'Lato', sans-serif;
@@ -169,12 +175,69 @@ header .wrapper aside .busca:hover {
     text-transform: uppercase;
 }
 
-.hero h2 {
+.hero article h2 {
     font-size: 24px;
     margin-bottom: 20px;
     font-family: georgia;
     font-style: italic;
     font-weight: 300;
+}
+
+.hero article {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hero article .btn {
+    padding: 0 40px;
+    display: inline-block;
+    line-height: 60px;
+    margin-top: 35px;
+    background-color: #6a6a6a;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    border-radius: 3px;
+}
+
+.hero article .btn:hover {
+    background-color: #555;
+}
+
+.hero ul {
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    padding: 0;
+    transform: translateX(-50%);
+}
+
+.hero ul li {
+    display: inline-block;
+}
+
+.hero ul li a {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #cecece;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.hero ul li a:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
 }
 
 .prev,
@@ -207,66 +270,6 @@ header .wrapper aside .busca:hover {
 .next {
     right: 0px;
 }
-
-.hero article {
-    position: relative;
-    width: 90%;
-    margin: auto;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.btn {
-    padding: 0 40px;
-    display: inline-block;
-    line-height: 60px;
-    background-color: #6a6a6a;
-    color: #fff;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    border-radius: 3px;
-}
-
-.btn:hover {
-    background-color: #555;
-}
-
-.hero .btn {
-    margin-top: 35px;
-}
-
-.hero ul {
-    list-style: none;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    padding: 0;
-    transform: translateX(-50%);
-}
-
-.hero ul li {
-    display: inline-block;
-}
-
-.hero ul li a {
-    display: block;
-    height: 15px;
-    width: 15px;
-    border: 1px solid #cecece;
-    text-indent: -1000px;
-    overflow: hidden;
-}
-
-.hero ul li a:hover {
-    background-color: #fff;
-    border: 1px solid #fff;
-}
 /*FIM HERO*/
 
 
@@ -274,24 +277,21 @@ header .wrapper aside .busca:hover {
 section .wrapper {
     width: 1180px;
     margin: 0 auto;
-    background: violet;
 }
 /*WRAPPER*/
-
 
 
 /*INICIO GRELHA*/
 .grelha {
     margin-top: 32px;
-    padding-bottom: 32px;
-    background: red;
+    margin-bottom: 32px;
 }
 
 .grelha .wrapper {
     overflow: hidden;
 }
 
-.grelha ul {
+.grelha .wrapper ul {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -299,7 +299,7 @@ section .wrapper {
     margin: 0;
 }
 
-.grelha ul li {
+.grelha .wrapper ul li {
     float: left;
     height: 295px;
     width: 295px;
@@ -308,32 +308,32 @@ section .wrapper {
     box-sizing: border-box;
 }
 
-.grelha ul li:first-child {
+.grelha .wrapper ul li:first-child {
     height: 590px;
 }
 
-.grelha ul li:nth-child(7) {
+.grelha .wrapper ul li:nth-child(7) {
     height: 590px;
     float: right;
 }
 
-.bloco-grande {
+.grelha .wrapper .bloco-grande {
     background-color: #d2d2d2;
 }
 
-.bloco-twitter {
+.grelha .wrapper .bloco-twitter {
     background-color: #bbb;
 }
 
-.bloco-produto {
+.grelha .wrapper .bloco-produto {
     background-color: #606060;
 }
 
-.bloco-venda {
+.grelha .wrapper .bloco-venda {
     background-color: #cacaca;
 }
 
-.bloco-vazio {
+.grelha .wrapper .bloco-vazio {
     background-color: #c2c2c2;
 }
 /* FIM GRELHA*/
@@ -342,14 +342,13 @@ section .wrapper {
 /*INICIO SIGN UP*/
 .signup {
     margin: 100px 0;
-    background: blue;
 }
 
 .signup .wrapper {
     text-align: center;
 }
 
-.signup h3 {
+.signup .wrapper h3 {
     font-size: 36px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
@@ -358,7 +357,7 @@ section .wrapper {
     margin-bottom: 20px;
 }
 
-.signup h4 {
+.signup .wrapper h4 {
     font-size: 18px;
     font-family: georgia;
     font-style: italic;
@@ -366,30 +365,36 @@ section .wrapper {
     font-weight: normal;
 }
 
-.enviar {
+.signup .wrapper .enviar {
     width: 570px;
-    height: 56px;
     margin: 55px auto 0 auto;
+    overflow: hidden;
 }
 
-.inputadd {
+.signup .wrapper .inputadd {
     float: left;
-    height: 52px;
+    height: 56px;
     width: 450px;
     margin: 0;
     padding: 0 10px;
     font-size: 24px;
 }
 
-.add {
+.signup .wrapper .add {
     float: left;
-    line-height: 56px;
-    width: 95px;
+    line-height: 58px;
+    width: 94px;
     margin: 0;
     background-color: #f68236;
+    border: 1px solid #e67429;
+    text-decoration: none;
     color: #fff;
     font-size: 18px;
     font-family: lato, sans-serif;
+}
+
+.signup .wrapper .add:hover {
+    background-color: #e67429;
 }
 /*FIM SIGN UP*/
 
@@ -397,7 +402,6 @@ section .wrapper {
 /*INICIO BARRA CINZA*/
 .barracinza {
     margin: 47px 0;
-    background: yellow;
 }
 
 .barracinza .wrapper {
@@ -410,7 +414,7 @@ section .wrapper {
 
 /*INICIO FOOTER*/
 .footer {
-    background: green;
+
 }
 
 .footer .wrapper {
@@ -418,7 +422,7 @@ section .wrapper {
     overflow: hidden;
 }
 
-.footer arcticle:not(:last-child) {
+.footer .wrapper arcticle {
     float: left;
     width: 279px;
     height: 160px;
@@ -426,35 +430,32 @@ section .wrapper {
     border-right: 1px solid #ddd;
 }
 
-.social {
-    float: left;
-    width: 280px;
-    height: 160px;
-    margin-right: 15px;
+.footer .wrapper arcticle:last-child {
+    border: 0;
 }
 
-.footer ul {
+.footer .wrapper ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer ul li {
+.footer .wrapper ul li {
     margin: 0 0 8px 0;
     font-family: 'Lato', sans-serif;
 }
 
-.footer ul li a {
+.footer .wrapper ul li a {
     text-decoration: none;
     color: #666;
     font-size: 12px;
 }
 
-.footer ul li a:hover {
+.footer .wrapper ul li a:hover {
     text-decoration: underline;
 }
 
-#titulo-lista {
+.footer .wrapper .titulo-lista {
     text-transform: uppercase;
     color: #333;
     font-size: 14px;
@@ -462,11 +463,35 @@ section .wrapper {
     margin-bottom: 16px;
 }
 
-.redesocial {
+.footer .wrapper .social .redesocial {
     margin-top: 20px;
+    line-height: 32px;
+    width: 32px;
+    border: 1px solid #606060;
+    box-sizing: content-box;
+    float: left;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
 }
 
-.redesocial-icone {
-    margin-right: 14px;
+.footer .wrapper .social .redesocial:hover {
+    color: #666;
+}
+
+.footer .wrapper .social .redesocial[href*="twitter"]:before {
+    font-family: FontAwesome;
+    content: '\f099';
+}
+
+.footer .wrapper .social .redesocial[href*="facebook"]:before {
+    font-family: FontAwesome;
+    content: '\f09a';
+}
+
+.footer .wrapper .social .redesocial[href*="instagram"]:before {
+    font-family: FontAwesome;
+    content: '\f16d';
 }
 /*FIM FOOTER*/
