@@ -68,6 +68,7 @@ header .wrapper aside {
 
 header .wrapper aside .usuario {
     float: left;
+    margin-right: 40px;
 }
 
 header .wrapper aside .usuario ul {
@@ -89,12 +90,6 @@ header .wrapper aside .usuario ul li a {
     margin-right: 52px;
 }
 
-
-/* 
-fazer icones do usuario e cesta com before 
-*/
-
-
 header .wrapper aside .usuario ul li img {
     vertical-align: middle;
     margin-right: 5px;
@@ -108,6 +103,7 @@ header .wrapper aside .busca {
     width: 40px;
     border: 1px solid #979797;
     overflow: hidden;
+    transition: width 1s ease-out;
 }
 
 header .wrapper aside .busca a.submit {
@@ -125,10 +121,12 @@ header .wrapper aside .busca #searchinput {
     width: 0;
     position: absolute;
     top: 0;
-    left: -2px;
+    right: 40px;
     border: 0;
-    background-color: #eee;
     font-size: 16px;
+    background: #eee;
+    color: #333;
+    transition: width 1s ease-out;
 }
 
 header .wrapper aside .busca:hover #searchinput {
@@ -150,7 +148,6 @@ header .wrapper aside .busca:hover {
     width: 100%;
     text-align: center;
     background: linear-gradient(#4c4c4c, #b1b1b1);
-    /*    background:url('http://www.fullwidehd.com/wp-content/uploads/2015/10/abstract-wallpaper-wonderful-background.jpg');*/
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -273,17 +270,27 @@ header .wrapper aside .busca:hover {
 /*FIM HERO*/
 
 
-.wrapper {
+/*WRAPPER*/
+section .wrapper {
     width: 1180px;
-    margin: 50px auto;
+    margin: 0 auto;
+    background: violet;
 }
+/*WRAPPER*/
+
 
 
 /*INICIO GRELHA*/
 .grelha {
-    overflow: hidden;
-    margin-bottom: 145px;
+    margin-top: 32px;
+    padding-bottom: 32px;
+    background: red;
 }
+
+.grelha .wrapper {
+    overflow: hidden;
+}
+
 .grelha ul {
     width: 100%;
     height: 100%;
@@ -334,9 +341,12 @@ header .wrapper aside .busca:hover {
 
 /*INICIO SIGN UP*/
 .signup {
-    clear: both;
+    margin: 100px 0;
+    background: blue;
+}
+
+.signup .wrapper {
     text-align: center;
-    margin-bottom: 132px;
 }
 
 .signup h3 {
@@ -386,16 +396,24 @@ header .wrapper aside .busca:hover {
 
 /*INICIO BARRA CINZA*/
 .barracinza {
+    margin: 47px 0;
+    background: yellow;
+}
+
+.barracinza .wrapper {
     height: 118px;
     background-color: #bbb;
     position: relative;
-    margin-bottom: 47px;
 }
 /*FIM BARRA CINZA*/
 
 
 /*INICIO FOOTER*/
 .footer {
+    background: green;
+}
+
+.footer .wrapper {
     height: 300px;
     overflow: hidden;
 }
