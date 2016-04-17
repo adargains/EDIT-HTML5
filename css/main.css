@@ -304,7 +304,7 @@ section .wrapper {
     height: 295px;
     width: 295px;
     padding: 30px 10px;
-    text-align: center;
+
     box-sizing: border-box;
 }
 
@@ -317,25 +317,106 @@ section .wrapper {
     float: right;
 }
 
-.grelha .wrapper .bloco-grande {
+.grelha .wrapper ul li .bloco-conteudo {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.grelha .wrapper ul li .bloco-conteudo .cont-bloco-icone {
+    font-size: 36px;
+    font-family: FontAwesome;
+    margin: 0;
+}
+
+.grelha .wrapper ul li .bloco-conteudo .cont-bloco-titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Lato, sans-serif;
+    margin: 15px 0 5px 0;
+}
+
+.grelha .wrapper ul li .bloco-conteudo .cont-bloco-subtitulo {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 18px;
+    font-family: georgia, sans-serif;
+    margin: 4px 0 9px 0;
+}
+
+.grelha .wrapper ul li .bloco-conteudo .cont-bloco-tweet {
+    font-style: italic;
+    font-size: 14px;
+    font-family: georgia, sans-serif;
+}
+
+.grelha .wrapper ul li .bloco-conteudo .cont-bloco-tweet-autor {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
+}
+
+.grelha .wrapper li.bloco-grande {
     background-color: #d2d2d2;
 }
 
-.grelha .wrapper .bloco-twitter {
+.grelha .wrapper li.bloco-twitter {
     background-color: #bbb;
 }
 
-.grelha .wrapper .bloco-produto {
+.grelha .wrapper li.bloco-produto {
     background-color: #606060;
 }
 
-.grelha .wrapper .bloco-venda {
+.grelha .wrapper li.bloco-venda {
     background-color: #cacaca;
 }
 
-.grelha .wrapper .bloco-vazio {
+.grelha .wrapper li.bloco-vazio {
     background-color: #c2c2c2;
 }
+
+.grelha .wrapper ul li.bloco-grande .cont-bloco-icone,
+.grelha .wrapper ul li.bloco-grande .cont-bloco-tweet,
+.grelha .wrapper ul li.bloco-grande .cont-bloco-tweet-autor {
+    display: none;
+}
+
+.grelha .wrapper ul li.bloco-twitter .cont-bloco-icone:before,
+.grelha .wrapper ul li.bloco-twitter .cont-bloco-icone:after {
+    content: '';
+    width: 22px;
+    display: inline-block;
+    height: 1px;
+    margin: 12px 10px;
+    background-color: #fff;
+}
+
+.grelha .wrapper ul li.bloco-twitter .cont-bloco-titulo,
+.grelha .wrapper ul li.bloco-twitter .cont-bloco-subtitulo {
+    display: none;
+}
+
+.grelha .wrapper ul li.bloco-produto .cont-bloco-tweet,
+.grelha .wrapper ul li.bloco-produto .cont-bloco-tweet-autor {
+    display: none;
+}
+
+.grelha .wrapper ul li.bloco-venda .cont-bloco-tweet,
+.grelha .wrapper ul li.bloco-venda .cont-bloco-tweet-autor,
+.grelha .wrapper ul li.bloco-venda .cont-bloco-icone {
+    display: none;
+}
+
+.grelha .wrapper ul li.bloco-vazio .bloco-conteudo {
+    display: none;
+}
+
 /* FIM GRELHA*/
 
 
