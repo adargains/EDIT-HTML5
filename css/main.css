@@ -5,6 +5,7 @@ body {
 
 
 /* INICIO HEADER*/
+
 header {
     position: absolute;
     width: 100%;
@@ -145,10 +146,13 @@ header .wrapper aside .busca:hover #searchinput {
 header .wrapper aside .busca:hover {
     width: 349px;
 }
+
+
 /*FIM HEADER*/
 
 
 /*INICIO HERO*/
+
 .hero {
     height: 617px;
     width: 100%;
@@ -270,18 +274,24 @@ header .wrapper aside .busca:hover {
 .next {
     right: 0px;
 }
+
+
 /*FIM HERO*/
 
 
 /*WRAPPER*/
+
 section .wrapper {
     width: 1180px;
     margin: 0 auto;
 }
+
+
 /*WRAPPER*/
 
 
 /*INICIO GRELHA*/
+
 .grelha {
     margin-top: 32px;
     margin-bottom: 32px;
@@ -304,7 +314,6 @@ section .wrapper {
     height: 295px;
     width: 295px;
     padding: 30px 10px;
-
     box-sizing: border-box;
 }
 
@@ -417,10 +426,12 @@ section .wrapper {
     display: none;
 }
 
+
 /* FIM GRELHA*/
 
 
 /*INICIO SIGN UP*/
+
 .signup {
     margin: 100px 0;
 }
@@ -477,10 +488,13 @@ section .wrapper {
 .signup .wrapper .add:hover {
     background-color: #e67429;
 }
+
+
 /*FIM SIGN UP*/
 
 
 /*INICIO BARRA CINZA*/
+
 .barracinza {
     margin: 47px 0;
 }
@@ -490,13 +504,14 @@ section .wrapper {
     background-color: #bbb;
     position: relative;
 }
+
+
 /*FIM BARRA CINZA*/
 
 
 /*INICIO FOOTER*/
-.footer {
 
-}
+.footer {}
 
 .footer .wrapper {
     height: 300px;
@@ -575,4 +590,6 @@ section .wrapper {
     font-family: FontAwesome;
     content: '\f16d';
 }
+
+
 /*FIM FOOTER*/
