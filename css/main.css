@@ -122,7 +122,8 @@ header .wrapper aside .busca a.submit {
     position: relative;
     float: right;
     border-left: 1px solid #979797;
-    background: url("../img/search.png") no-repeat 10px 10px;
+    background: url("../img/search.png") no-repeat;
+    background-size: cover;
 }
 
 header .wrapper aside .busca #searchinput {
@@ -281,7 +282,8 @@ header .wrapper aside .busca:hover {
 
 /*WRAPPER*/
 
-section .wrapper {
+section .wrapper,
+footer .wrapper {
     width: 1180px;
     margin: 0 auto;
 }
@@ -440,7 +442,7 @@ section .wrapper {
     text-align: center;
 }
 
-.signup .wrapper h3 {
+.signup .wrapper h1 {
     font-size: 36px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
@@ -449,7 +451,7 @@ section .wrapper {
     margin-bottom: 20px;
 }
 
-.signup .wrapper h4 {
+.signup .wrapper h2 {
     font-size: 18px;
     font-family: georgia;
     font-style: italic;
@@ -463,7 +465,7 @@ section .wrapper {
     overflow: hidden;
 }
 
-.signup .wrapper .inputadd {
+.signup .wrapper .enviar .inputadd {
     float: left;
     height: 56px;
     width: 450px;
@@ -472,7 +474,7 @@ section .wrapper {
     font-size: 24px;
 }
 
-.signup .wrapper .add {
+.signup .wrapper .enviar .add {
     float: left;
     line-height: 58px;
     width: 94px;
@@ -485,7 +487,7 @@ section .wrapper {
     font-family: lato, sans-serif;
 }
 
-.signup .wrapper .add:hover {
+.signup .wrapper .enviar .add:hover {
     background-color: #e67429;
 }
 
@@ -505,20 +507,36 @@ section .wrapper {
     position: relative;
 }
 
+.barracinza .wrapper ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.barracinza .wrapper ul li {
+    height: 118px;
+    list-style-type: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.barracinza .wrapper ul li img {
+    height: 118px;
+}
+
 
 /*FIM BARRA CINZA*/
 
 
 /*INICIO FOOTER*/
 
-.footer {}
-
-.footer .wrapper {
+footer .wrapper {
     height: 300px;
     overflow: hidden;
 }
 
-.footer .wrapper arcticle {
+footer .wrapper ul {
     float: left;
     width: 279px;
     height: 160px;
@@ -526,32 +544,31 @@ section .wrapper {
     border-right: 1px solid #ddd;
 }
 
-.footer .wrapper arcticle:last-child {
+footer .wrapper ul:last-child {
     border: 0;
 }
 
-.footer .wrapper ul {
+footer .wrapper ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.footer .wrapper ul li {
+footer .wrapper ul li {
     margin: 0 0 8px 0;
     font-family: 'Lato', sans-serif;
 }
 
-.footer .wrapper ul li a {
+footer .wrapper ul li a {
     text-decoration: none;
     color: #666;
     font-size: 12px;
 }
 
-.footer .wrapper ul li a:hover {
+footer .wrapper ul li a:hover {
     text-decoration: underline;
 }
 
-.footer .wrapper .titulo-lista {
+footer .wrapper .titulo-lista {
     text-transform: uppercase;
     color: #333;
     font-size: 14px;
@@ -559,34 +576,43 @@ section .wrapper {
     margin-bottom: 16px;
 }
 
-.footer .wrapper .social .redesocial {
-    margin-top: 20px;
+footer .wrapper .social .redesocial {
+    margin-top: 30px;
+}
+
+footer .wrapper .social .redesocial li {
+    display: inline-block;
+}
+
+footer .wrapper .social .redesocial a {
+    display: block;
     line-height: 32px;
     width: 32px;
     border: 1px solid #606060;
     box-sizing: content-box;
-    float: left;
+    font-size: 16px;
     margin-right: 15px;
     text-align: center;
     text-decoration: none;
     color: #333;
 }
 
-.footer .wrapper .social .redesocial:hover {
+footer .wrapper .redesocial a:hover {
     color: #666;
+    text-decoration: none;
 }
 
-.footer .wrapper .social .redesocial[href*="twitter"]:before {
+footer .wrapper .social .redesocial a[href*="twitter"]:before {
     font-family: FontAwesome;
     content: '\f099';
 }
 
-.footer .wrapper .social .redesocial[href*="facebook"]:before {
+footer .wrapper .social .redesocial a[href*="facebook"]:before {
     font-family: FontAwesome;
     content: '\f09a';
 }
 
-.footer .wrapper .social .redesocial[href*="instagram"]:before {
+footer .wrapper .social .redesocial a[href*="instagram"]:before {
     font-family: FontAwesome;
     content: '\f16d';
 }
