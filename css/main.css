@@ -28,11 +28,16 @@ header .wrapper #logo {
     width: 42px;
     height: 42px;
     text-align: center;
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #333;
     line-height: 42px;
     top: 35px;
     text-decoration: none;
+}
+
+header.home .wrapper #logo {
+    color: #333;
+    background-color: #fff;
 }
 
 header .wrapper nav {
@@ -54,13 +59,30 @@ header .wrapper nav ul li {
 header .wrapper nav ul li a {
     text-decoration: none;
     font-size: 14px;
-    color: #cecece;
+    color: #333;
     margin-left: 52px;
+}
+
+header.home .wrapper nav ul li a {
+    color: #cecece;
 }
 
 header .wrapper aside {
     float: right;
     position: relative;
+}
+
+header .wrapper aside span {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+}
+
+header.home .wrapper aside .usuario ul li span {
+    color: #cecece;
+}
+
+header .wrapper aside ul li .usuario span {
+    color: #333;
 }
 
 header .wrapper aside .usuario {
@@ -78,13 +100,35 @@ header .wrapper aside .usuario ul {
 
 header .wrapper aside .usuario ul li {
     float: left;
+    margin-right: 52px;
 }
 
 header .wrapper aside .usuario ul li a {
     text-decoration: none;
     font-size: 14px;
+    color: #333;
+}
+
+header .wrapper aside .usuario ul li span a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header .wrapper aside .usuario ul li.anonimo span {
+    display: none;
+}
+
+header .wrapper aside .usuario ul li.login a {
+    display: none;
+}
+
+header .wrapper aside .usuario ul li.login span a {
+    display: inherit;
+    color: orange;
+}
+
+header.home .wrapper aside .usuario ul li a {
     color: #cecece;
-    margin-right: 52px;
 }
 
 header .wrapper aside .usuario ul li a:hover {
@@ -92,6 +136,12 @@ header .wrapper aside .usuario ul li a:hover {
 }
 
 header .wrapper aside .usuario ul li a[href*="user"]:before {
+    font-family: FontAwesome;
+    content: "\f007";
+    margin-right: 5px;
+}
+
+header .wrapper aside .usuario ul li.login span:before {
     font-family: FontAwesome;
     content: "\f007";
     margin-right: 5px;
@@ -115,15 +165,27 @@ header .wrapper aside .busca {
     transition: width 1s ease-out;
 }
 
-header .wrapper aside .busca a.submit {
+header .wrapper aside .busca a {
     display: block;
     width: 42px;
     height: 42px;
-    position: relative;
     float: right;
+    background: #333;
     border-left: 1px solid #979797;
-    background: url("../img/search.png") no-repeat;
-    background-size: cover;
+    position: relative;
+}
+
+header.home .wrapper aside .busca a {
+    background: none;
+}
+
+header .wrapper aside .busca a:before {
+    font-family: FontAwesome;
+    content: "\f002";
+    position: absolute;
+    top: -37px;
+    left: 13px;
+    color: #cecece;
 }
 
 header .wrapper aside .busca #searchinput {
@@ -134,9 +196,13 @@ header .wrapper aside .busca #searchinput {
     right: 42px;
     border: 0;
     font-size: 16px;
-    background: #eee;
+    background: #fff;
     color: #333;
     transition: width 1s ease-out;
+}
+
+header.home .wrapper aside .busca #searchinput {
+    background: #eee;
 }
 
 header .wrapper aside .busca:hover #searchinput {
@@ -490,8 +556,6 @@ footer .wrapper {
 .signup .wrapper .enviar .add:hover {
     background-color: #e67429;
 }
-
-
 /*FIM SIGN UP*/
 
 
