@@ -449,7 +449,7 @@ footer .wrapper {
     background-color: #bbb;
 }
 
-.grelha .wrapper li.bloco-produto {
+.grelha .wrapper li.bloco-lista-produto {
     background-color: #606060;
 }
 
@@ -482,8 +482,8 @@ footer .wrapper {
     display: none;
 }
 
-.grelha .wrapper ul li.bloco-produto .cont-bloco-tweet,
-.grelha .wrapper ul li.bloco-produto .cont-bloco-tweet-autor {
+.grelha .wrapper ul li.bloco-lista-produto .cont-bloco-tweet,
+.grelha .wrapper ul li.bloco-lista-produto .cont-bloco-tweet-autor {
     display: none;
 }
 
@@ -734,6 +734,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .breadcrumbs .wrapper ul li {
     display: inline;
+    text-transform: uppercase;
 }
 
 .breadcrumbs .wrapper ul li:not(:last-child):after {
@@ -744,34 +745,34 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /* FIM BREADCRUMBS */
 
 
-/* INICIO PRODUTO */
+/* INICIO LISTA-PRODUTO */
 
-.produto {
+.lista-produto {
     margin: 60px;
     font-family: Lato, sans-serif;
     color: #333;
     margin: 20px 0 100px 0;
 }
 
-.produto .wrapper {
+.lista-produto .wrapper {
     text-align: center;
 }
 
-.produto .wrapper h1 {
+.lista-produto .wrapper h1 {
     text-transform: uppercase;
 }
 
-.produto .wrapper h2 {
+.lista-produto .wrapper h2 {
     font-size: 14px;
     font-weight: 700;
 }
 
-.produto .wrapper h3 {
+.lista-produto .wrapper h3 {
     font-size: 14px;
     font-weight: normal;
 }
 
-.produto .wrapper a {
+.lista-produto .wrapper a {
     font-family: georgia;
     font-style: italic;
     color: #666;
@@ -779,38 +780,64 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: block;
 }
 
-.produto .wrapper a:after {
+.lista-produto .wrapper a:after {
     font-family: FontAwesome;
     content: " \f061";
 }
 
-.produto .wrapper ul {
+.lista-produto .wrapper ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.produto .wrapper ul li {
+.lista-produto .wrapper ul li {
     display: inline-block;
     width: 208px;
     margin: 10px 55px 30px 55px;
 }
 
-.produto .wrapper ul li:nth-child(1n+1) {
+.lista-produto .wrapper ul li:nth-child(1n+4) {
     margin-left: 0;
 }
 
-.produto .wrapper ul li:nth-child(4n+4) {
+.lista-produto .wrapper ul li:nth-child(4n+4) {
     margin-right: 0;
 }
 
-.produto .wrapper ul li img {
+.lista-produto .wrapper ul li img {
     width: 208px;
     height: 256px;
 }
 
+.lista-produto .wrapper .paginas {
+    width: 500px;
+    margin: 0 auto;
+}
 
-/* FIM PRODUTO */
+.lista-produto .wrapper .paginas ul {
+
+}
+
+.lista-produto .wrapper .paginas ul li {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    line-height: 25px;
+    border: 1px solid #333;
+    box-sizing: content-box;
+    background-color: #333;
+    color: #fff;
+}
+
+.lista-produto .wrapper .paginas ul li:hover {
+    background-color: #fff;
+    border: 1px solid #666;
+    color: #666;
+}
+
+
+/* FIM LISTA-PRODUTO */
 
 
 
@@ -889,28 +916,72 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     color: #fff;
 }
 
-.produto .wrapper .paginas {
-    width: 500px;
+/* FIM TITLE */
+
+
+/*INICIO DETALHES-PRODUTO*/
+
+.detalhes-produto {
+    text-align: center;
+    font-family: lato, sans-serif;
+}
+
+.detalhes-produto .wrapper {
+
+}
+
+.detalhes-produto .wrapper img {
+    width: 100%;
+    height: 590px;
+}
+
+.detalhes-produto .wrapper h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+}
+
+.detalhes-produto .wrapper h2 {
+    font-family: georgia;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.detalhes-produto .wrapper h3 {
+    text-transform: uppercase;
+}
+
+.detalhes-produto .wrapper sub {
+    font-size: 14px;
+}
+
+.detalhes-produto .wrapper p {
+
+}
+
+.detalhes-produto .wrapper a {
+    display: block;
+    width: 194px;
+    line-height: 51px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    text-decoration: none;
+    color: #fff;
     margin: 0 auto;
 }
 
-.produto .wrapper .paginas ul {
-
-}
-
-.produto .wrapper .paginas ul li {
-    margin: 0;
+.detalhes-produto .wrapper ul {
     padding: 0;
-    width: 25px;
-    line-height: 25px;
-    border: 1px solid #333;
-    box-sizing: content-box;
-    background-color: #333;
-    color: #fff;
+    margin: 0;
 }
 
-.produto .wrapper .paginas ul li:hover {
-    background-color: #fff;
-    border: 1px solid #666;
-    color: #666;
+.detalhes-produto .wrapper ul li {
+    display: inline-block;
+    width: 32px;
+    line-height: 32px;
+    box-sizing: content-box;
+    border: 1px solid #333;
 }
+
+/*FIM DETALHES-PRODUTO*/
