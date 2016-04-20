@@ -557,6 +557,8 @@ footer .wrapper {
 .signup .wrapper .enviar .add:hover {
     background-color: #e67429;
 }
+
+
 /*FIM SIGN UP*/
 
 
@@ -567,24 +569,30 @@ footer .wrapper {
     text-align: center;
 }
 
-.barracinza h1 {
+.barracinza .wrapper h1 {
     border-top: 1px solid #cecece;
     font-family: georgia;
     color: #666;
     font-size: 24px;
-    font-style: normal;
+    font-weight: normal;
+    font-style: italic;
+    padding: 50px 0;
+    margin: 0;
 }
 
-.barracinza .wrapper {
-    height: 118px;
-    background-color: #bbb;
-    position: relative;
+.barracinza .wrapper h1.home {
+    display: none;
+}
 
+.barracinza .wrapper .barra {
+    height: 118px;
+    position: relative;
 }
 
 .barracinza .wrapper ul {
     padding: 0;
     margin: 0;
+    background-color: #bbb;
     overflow: hidden;
 }
 
@@ -696,8 +704,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM FOOTER*/
 
 
-
-
 /*
 
 ********************
@@ -713,9 +719,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin-top: 132px;
 }
 
-.breadcrumbs .wrapper {
-
-}
+.breadcrumbs .wrapper {}
 
 .breadcrumbs .wrapper ul {
     list-style: none;
@@ -733,8 +737,9 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .breadcrumbs .wrapper ul li:not(:last-child):after {
     content: " /"
 }
-/* FIM BREADCRUMBS */
 
+
+/* FIM BREADCRUMBS */
 
 
 /* INICIO PRODUTO */
@@ -743,7 +748,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 60px;
     font-family: Lato, sans-serif;
     color: #333;
-    margin: 100px 0;
+    margin: 110px 0;
 }
 
 .produto .wrapper {
@@ -751,16 +756,17 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .produto .wrapper h1 {
-
+    text-transform: uppercase;
 }
 
 .produto .wrapper h2 {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .produto .wrapper h3 {
     font-size: 14px;
+    font-weight: normal;
 }
 
 .produto .wrapper a {
@@ -798,5 +804,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     width: 208px;
     height: 256px;
 }
+
 
 /* FIM PRODUTO */
