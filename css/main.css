@@ -119,11 +119,11 @@ header .wrapper aside .usuario ul li.anonimo span {
     display: none;
 }
 
-header .wrapper aside .usuario ul li.login a {
+header .wrapper aside .usuario ul li.logado a {
     display: none;
 }
 
-header .wrapper aside .usuario ul li.login span a {
+header .wrapper aside .usuario ul li.logado span a {
     display: inherit;
     color: orange;
 }
@@ -142,7 +142,7 @@ header .wrapper aside .usuario ul li a[href*="user"]:before {
     margin-right: 5px;
 }
 
-header .wrapper aside .usuario ul li.login span:before {
+header .wrapper aside .usuario ul li.logado span:before {
     font-family: FontAwesome;
     content: "\f007";
     margin-right: 5px;
