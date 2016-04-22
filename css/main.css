@@ -924,43 +924,92 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .detalhes-produto {
     text-align: center;
     font-family: lato, sans-serif;
+    margin-bottom: 25px;
+    overflow: hidden;
 }
 
 .detalhes-produto .wrapper {
 
 }
 
-.detalhes-produto .wrapper img {
+.detalhes-produto .wrapper .detalhes-imagem {
+    background: url("http://lorempixel.com/1180/590/cats") no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 590px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.detalhes-produto .wrapper h1 {
+.detalhes-produto .wrapper .detalhes-imagem ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.detalhes-produto .wrapper .detalhes-imagem ul li {
+    margin-bottom: 10px;
+}
+
+.detalhes-produto .wrapper .detalhes-imagem ul li img{
+    width: 70px;
+    height: 70px;
+}
+
+.detalhes-produto .wrapper .detalhes-texto {
+    width: 730px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.detalhes-produto .wrapper .detalhes-texto h1 {
     text-transform: uppercase;
     font-size: 36px;
-    margin: 0;
+    margin: 30px 0 0 0;
+    color: #333;
 }
 
-.detalhes-produto .wrapper h2 {
+.detalhes-produto .wrapper .detalhes-texto sub {
+    font-size: 14px;
+    font-style: italic;
+    color: #a3a3a3;
+}
+
+.detalhes-produto .wrapper .detalhes-texto h2 {
     font-family: georgia;
     font-style: italic;
     font-size: 18px;
     font-weight: 200;
 }
 
-.detalhes-produto .wrapper h3 {
+.detalhes-produto .wrapper .detalhes-texto h3 {
     text-transform: uppercase;
 }
 
-.detalhes-produto .wrapper sub {
+.detalhes-produto .wrapper .detalhes-texto p {
     font-size: 14px;
 }
 
-.detalhes-produto .wrapper p {
-
+.detalhes-produto .wrapper .detalhes-texto ul {
+    padding: 0;
+    margin: 0;
 }
 
-.detalhes-produto .wrapper a {
+.detalhes-produto .wrapper .detalhes-texto ul li {
+    display: inline-block;
+    width: 32px;
+    line-height: 32px;
+    box-sizing: content-box;
+    border: 1px solid #333;
+}
+
+
+.detalhes-produto .wrapper .detalhes-texto a {
     display: block;
     width: 194px;
     line-height: 51px;
@@ -968,20 +1017,9 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     background-color: #f68236;
     text-decoration: none;
     color: #fff;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
-.detalhes-produto .wrapper ul {
-    padding: 0;
-    margin: 0;
-}
 
-.detalhes-produto .wrapper ul li {
-    display: inline-block;
-    width: 32px;
-    line-height: 32px;
-    box-sizing: content-box;
-    border: 1px solid #333;
-}
 
 /*FIM DETALHES-PRODUTO*/
