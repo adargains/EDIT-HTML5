@@ -19,6 +19,12 @@ h2 {
     color: #666;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* INICIO HEADER*/
 
@@ -627,7 +633,6 @@ footer .wrapper {
 
     margin: 35px 0;
     line-height: 44px;
-
     background-color: #f1f1f1;
     display: none;
 }
@@ -948,9 +953,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .detalhes-produto .wrapper .detalhes-imagem ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
     position: absolute;
     right: 10px;
     bottom: 0px;
@@ -988,11 +990,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .detalhes-produto .wrapper .detalhes-texto p {
     font-size: 14px;
-}
-
-.detalhes-produto .wrapper .detalhes-texto ul {
-    padding: 0;
-    margin: 0;
 }
 
 .detalhes-produto .wrapper .detalhes-texto ul li {
