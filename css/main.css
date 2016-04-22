@@ -4,6 +4,22 @@ body {
 }
 
 
+h1 {
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: georgia;
+    font-style: italic;
+    font-weight: normal;
+    color: #666;
+}
+
+
 /* INICIO HEADER*/
 
 header {
@@ -388,6 +404,11 @@ footer .wrapper {
     box-sizing: border-box;
 }
 
+.grelha .wrapper ul li h1,
+.grelha .wrapper ul li h2 {
+    color: #fff;
+}
+
 .grelha .wrapper ul li:first-child {
     height: 590px;
 }
@@ -449,7 +470,7 @@ footer .wrapper {
     background-color: #bbb;
 }
 
-.grelha .wrapper li.bloco-lista-produto {
+.grelha .wrapper li.bloco-produto {
     background-color: #606060;
 }
 
@@ -482,8 +503,8 @@ footer .wrapper {
     display: none;
 }
 
-.grelha .wrapper ul li.bloco-lista-produto .cont-bloco-tweet,
-.grelha .wrapper ul li.bloco-lista-produto .cont-bloco-tweet-autor {
+.grelha .wrapper ul li.bloco-produto .cont-bloco-tweet,
+.grelha .wrapper ul li.bloco-produto .cont-bloco-tweet-autor {
     display: none;
 }
 
@@ -512,22 +533,14 @@ footer .wrapper {
 }
 
 .signup .wrapper h1 {
-    font-size: 36px;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
     margin-top: 0;
     padding: 0;
     margin-bottom: 20px;
 }
 
 .signup .wrapper h2 {
-    font-size: 18px;
-    font-family: georgia;
-    font-style: italic;
     margin-top: 0;
-    font-weight: normal;
 }
-
 .signup .wrapper .enviar {
     width: 570px;
     margin: 55px auto 0 auto;
@@ -610,6 +623,26 @@ footer .wrapper {
     height: 118px;
 }
 
+.barracinza .wrapper .showmemore {
+
+    margin: 35px 0;
+    line-height: 44px;
+
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.barracinza .wrapper .showmemore a {
+    text-transform: uppercase;
+    font-family: lato, sans-serif;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.cinza-detalhes .wrapper .showmemore {
+    display: block;
+}
 
 /*FIM BARRA CINZA*/
 
@@ -627,15 +660,12 @@ footer .wrapper ul {
     height: 160px;
     margin-right: 15px;
     border-right: 1px solid #ddd;
+    list-style: none;
+    padding: 0;
 }
 
 footer .wrapper ul:last-child {
     border: 0;
-}
-
-footer .wrapper ul {
-    list-style: none;
-    padding: 0;
 }
 
 footer .wrapper ul li {
@@ -749,22 +779,16 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .lista-produto {
     margin: 60px;
-    font-family: Lato, sans-serif;
     color: #333;
     margin: 20px 0 100px 0;
-}
-
-.lista-produto .wrapper {
+    font-family: Lato, sans-serif;
     text-align: center;
-}
-
-.lista-produto .wrapper h1 {
-    text-transform: uppercase;
 }
 
 .lista-produto .wrapper h2 {
     font-size: 14px;
-    font-weight: 700;
+    font-style: normal;
+    font-family: Lato, sans-serif;
 }
 
 .lista-produto .wrapper h3 {
@@ -797,7 +821,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 10px 55px 30px 55px;
 }
 
-.lista-produto .wrapper ul li:nth-child(1n+4) {
+.lista-produto .wrapper ul li:nth-child(4n+1) {
     margin-left: 0;
 }
 
@@ -860,21 +884,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-align: center;
 }
 
-.title .wrapper h1 {
-    text-transform: uppercase;
-    color: #333;
-    font-family: Lato, sans-serif;
-    font-size: 36px;
-}
-
-.title .wrapper h2 {
-    color: #666;
-    font-family: georgia;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: 300;
-}
-
 .title .wrapper .lista {
     display: inline-block;
     width: 178px;
@@ -928,10 +937,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     overflow: hidden;
 }
 
-.detalhes-produto .wrapper {
-
-}
-
 .detalhes-produto .wrapper .detalhes-imagem {
     background: url("http://lorempixel.com/1180/590/cats") no-repeat;
     background-size: cover;
@@ -968,23 +973,13 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .detalhes-produto .wrapper .detalhes-texto h1 {
-    text-transform: uppercase;
-    font-size: 36px;
     margin: 30px 0 0 0;
-    color: #333;
 }
 
 .detalhes-produto .wrapper .detalhes-texto sub {
     font-size: 14px;
     font-style: italic;
     color: #a3a3a3;
-}
-
-.detalhes-produto .wrapper .detalhes-texto h2 {
-    font-family: georgia;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: 200;
 }
 
 .detalhes-produto .wrapper .detalhes-texto h3 {
