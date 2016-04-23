@@ -482,7 +482,7 @@ footer .wrapper {
 }
 
 .grelha .wrapper li.bloco-produto {
-    background-color: #606060;
+    background-color: #666;
 }
 
 .grelha .wrapper li.bloco-venda {
@@ -700,7 +700,7 @@ footer .wrapper .social .redesocial a {
     display: block;
     line-height: 32px;
     width: 32px;
-    border: 1px solid #606060;
+    border: 1px solid #666;
     box-sizing: content-box;
     font-size: 16px;
     margin-right: 15px;
@@ -1042,3 +1042,29 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 /*FIM ABOUT*/
+
+
+/*INICIO CONTACTO*/
+
+.contacto {
+
+}
+
+.contacto .wrapper {
+    width: 560px;
+}
+
+.contacto .wrapper p{
+    font-family: lato, sans-serif;
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.contacto .wrapper input {
+    width: 560px;
+    padding: 5px;
+}
+
+/*FIM CONTACTO*/
