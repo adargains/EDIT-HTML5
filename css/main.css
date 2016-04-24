@@ -805,10 +805,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .lista-produto .wrapper ul li {
-    display: inline-block;
+    float: left;
     width: 208px;
     margin: 10px 55px 30px 55px;
 }
@@ -852,16 +853,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /* FIM LISTA-PRODUTO */
 
 
-/*
-
-********************
-    CATEGORY MEN
-********************
-
-*/
-
 
 /* INICIO TITLE */
+
+.title {
+    margin: 50px 0;
+}
 
 .title .wrapper {
     text-align: center;
@@ -869,6 +866,10 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .title .wrapper h1 {
     margin: 10px;
+}
+
+.title .wrapper h1 span {
+    font-weight: 300;
 }
 
 .title .wrapper .lista {
