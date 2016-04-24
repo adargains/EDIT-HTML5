@@ -1138,3 +1138,40 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 /*FIM CONTACTO*/
+
+
+/*INICIO LISTA-CHECKOUT*/
+
+.lista-checkout .wrapper table tr th {
+    font-family: lato,sans-serif;
+    color: #999;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.lista-checkout .wrapper table .table-product {
+
+}
+
+.lista-checkout .wrapper table .table-desc {
+
+}
+
+.lista-checkout .wrapper table .table-color {
+
+}
+
+.lista-checkout .wrapper table .table-size {
+
+}
+
+.lista-checkout .wrapper table .table-qty {
+
+}
+
+.lista-checkout .wrapper table .table-amount {
+
+}
+
+/*FIM LISTA-CHECKOUT*/
