@@ -1047,24 +1047,73 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*INICIO CONTACTO*/
 
 .contacto {
-
+    margin: 60px 0 100px 0;
 }
 
 .contacto .wrapper {
-    width: 560px;
+
 }
 
-.contacto .wrapper p{
+.contacto .wrapper .wrapper-input {
+    width: 575px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.contacto .wrapper .wrapper-input article {
+    float: left;
+}
+
+.contacto .wrapper .wrapper-input article p{
     font-family: lato, sans-serif;
     font-size: 12px;
     color: #666;
     text-transform: uppercase;
-    margin: 5px 0;
+    margin: 20px 0 5px 0;
 }
 
-.contacto .wrapper input {
-    width: 560px;
+.contacto .wrapper .wrapper-input article input {
+    font-family: lato, sans-serif;
+    font-size: 12px;
+    color: #666;
     padding: 5px;
+}
+
+.contacto .wrapper .wrapper-input article.input-grande input {
+    width: 560px;
+
+}
+
+.contacto .wrapper .wrapper-input article.input-pequeno input {
+    width: 263px;
+}
+
+.contacto .wrapper .wrapper-input article.input-grande textarea {
+    width: 568px;
+    height: 200px;
+    resize: none;
+}
+
+.contacto .wrapper .wrapper-input article.input-pequeno:nth-child(2n) input {
+    margin-right: 20px;
+}
+
+.contacto .wrapper .wrapper-input a {
+    clear: both;
+    position: relative;
+    top: 30px;
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    width: 194px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    box-sizing: content-box;
 }
 
 /*FIM CONTACTO*/
