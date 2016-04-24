@@ -1142,36 +1142,149 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 /*INICIO LISTA-CHECKOUT*/
 
+.lista-checkout .wrapper table {
+    border: none;
+    border-collapse: collapse;
+}
+
 .lista-checkout .wrapper table tr th {
     font-family: lato,sans-serif;
     color: #999;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 12px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.lista-checkout .wrapper table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.lista-checkout .wrapper table tr:last-child {
+    border-bottom: 0;
+}
+
+.lista-checkout .wrapper table tr td {
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 10px 10px 0;
 }
 
 .lista-checkout .wrapper table .table-product {
+    width: 100px;
+    padding-left:0;
+}
+
+.lista-checkout .wrapper table .table-product img {
+    width: 100px;
+    height: 100px;
 
 }
 
-.lista-checkout .wrapper table .table-desc {
+.lista-checkout .wrapper table tr.table-product-row td.table-desc .table-desc-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.lista-checkout .wrapper table .table-product-row td.table-desc p.table-desc-ref {
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    margin: 2px 0;
+}
+
+.lista-checkout .wrapper table tr .table-desc {
+    width: 590px;
+}
+
+.lista-checkout .wrapper table tr .table-color {
+    width: 140px;
+}
+
+.lista-checkout .wrapper table tr .table-size {
+    width: 120px;
+}
+
+.lista-checkout .wrapper table tr .table-qty {
+    width: 105px;
+    position: relative;
+}
+
+.lista-checkout .wrapper table tr td.table-qty ul {
+    position: absolute;
+    display: block;
+    top: 50px;
+    left: 15px;
+}
+
+.lista-checkout .wrapper table tr td.table-qty ul li {
+    width: 11px;
+    line-height: 11px;
+    font-size: 9px;
+    background-color: #333;
+    margin-bottom: 2px;
+    padding: 0;
+    text-align: center;
+}
+
+.lista-checkout .wrapper table tr td.table-qty ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.lista-checkout .wrapper table tr .table-amount {
+    width: 80px;
+    padding-left: 10px;
+}
+
+.lista-checkout .wrapper table tr td.table-amount {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.lista-checkout .wrapper table tr td.table-amount a {
+    text-decoration: none;
+    color: #333;
+}
+
+.lista-checkout .wrapper table tr td.table-amount a:after {
+    content: "\f00d";
+    font-family: fontawesome;
+    margin-left: 10px;
+}
+
+.lista-checkout .wrapper table tr .table-subtotal {
+    width: 800px;
+    text-align: right;
+    font-weight: 600;
+    background-color: #f9f9f9;
+}
+
+.lista-checkout .wrapper table tr .table-value {
+    color: orange;
+    text-align: center;
+}
+
+.lista-checkout .wrapper a {
 
 }
 
-.lista-checkout .wrapper table .table-color {
 
+.lista-checkout .wrapper .lista-checkout-order-now {
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    width: 194px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    box-sizing: content-box;
 }
-
-.lista-checkout .wrapper table .table-size {
-
-}
-
-.lista-checkout .wrapper table .table-qty {
-
-}
-
-.lista-checkout .wrapper table .table-amount {
-
-}
-
 /*FIM LISTA-CHECKOUT*/
