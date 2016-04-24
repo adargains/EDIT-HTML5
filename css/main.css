@@ -783,12 +783,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-align: center;
 }
 
-.lista-produto .wrapper h3 {
+.lista-produto .wrapper .produtos h3 {
     margin: 10px;
     font-weight: normal;
 }
 
-.lista-produto .wrapper a {
+.lista-produto .wrapper .produtos a {
     font-family: georgia;
     font-style: italic;
     color: #666;
@@ -796,33 +796,33 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: block;
 }
 
-.lista-produto .wrapper a:after {
+.lista-produto .wrapper .produtos a:after {
     font-family: FontAwesome;
     content: " \f061";
 }
 
-.lista-produto .wrapper ul {
+.lista-produto .wrapper .produtos ul {
     list-style: none;
     padding: 0;
     margin: 0;
     overflow: hidden;
 }
 
-.lista-produto .wrapper ul li {
+.lista-produto .wrapper .produtos ul li {
     float: left;
     width: 208px;
     margin: 10px 55px 30px 55px;
 }
 
-.lista-produto .wrapper ul li:nth-child(4n+1) {
+.lista-produto .wrapper .produtos ul li:nth-child(4n+1) {
     margin-left: 0;
 }
 
-.lista-produto .wrapper ul li:nth-child(4n+4) {
+.lista-produto .wrapper .produtos ul li:nth-child(4n+4) {
     margin-right: 0;
 }
 
-.lista-produto .wrapper ul li img {
+.lista-produto .wrapper .produtos ul li img {
     width: 208px;
     height: 256px;
 }
@@ -833,6 +833,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .lista-produto .wrapper .paginas ul li {
+    display: inline-block;
     margin: 0;
     padding: 0;
     width: 25px;
@@ -849,6 +850,25 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     color: #666;
 }
 
+.lista-produto .wrapper .no-prod-in-cat {
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    caption-side: #666;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.lista-produto .wrapper .no-prod-in-cat p {
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.lista-produto .wrapper .no-prod-in-cat a {
+    text-decoration: none;
+    color: orange;
+
+
+}
 
 /* FIM LISTA-PRODUTO */
 
