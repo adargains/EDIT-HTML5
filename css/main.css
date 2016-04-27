@@ -49,7 +49,7 @@ ul {
 /* INICIO HEADER*/
 
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
     z-index: 10;
@@ -654,6 +654,7 @@ footer .wrapper {
 footer .wrapper {
     height: 300px;
     overflow: hidden;
+    padding-top: 50px;
 }
 
 footer .wrapper ul {
@@ -733,19 +734,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM FOOTER*/
 
 
-/*
-
-********************
-    CATEGORY ALL
-********************
-
-*/
-
 
 /* INICIO BREADCRUMBS */
 
 .breadcrumbs {
-    margin: 132px 0 80px 0;
+    margin: 20px 0 80px 0;
 }
 
 .breadcrumbs .wrapper ul li {
@@ -877,7 +870,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /* INICIO TITLE */
 
 .title {
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 .title .wrapper {
@@ -892,7 +885,16 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     font-weight: 300;
 }
 
-.title .wrapper .lista {
+/* FIM TITLE */
+
+
+/* INICIO FILTRO */
+
+.filtro {
+    text-align: center;
+}
+
+.filtro .wrapper article {
     display: inline-block;
     width: 178px;
     text-align: left;
@@ -901,18 +903,24 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     color: #666;
 }
 
-.title .wrapper .lista p {
+.filtro .wrapper article p {
     border-bottom: 1px solid #333;
     margin-bottom: 11px;
 }
 
-.title .wrapper .lista p:after {
+.filtro .wrapper article p:after {
     font-family: FontAwesome;
-    content: "\f063";
+    content: "\f0d7";
     float: right;
 }
 
-.title .wrapper ul {
+.filtro .wrapper article:hover p:after {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    float: right;
+}
+
+.filtro .wrapper ul {
     font-size: 14px;
     display: inline-block;
     width: 178px;
@@ -921,23 +929,23 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     background-color: #fff;
 }
 
-.title .wrapper ul li {
+.filtro .wrapper ul li {
     color: #333;
     padding: 5px;
     font-size: 12px;
 }
 
-.title .wrapper .lista:hover ul {
+.filtro .wrapper article:hover ul {
     display: block;
 }
 
-.title .wrapper .lista ul li:hover {
-    background-color: #333;
+.filtro .wrapper article ul li:hover {
+    background-color: #666;
     color: #fff;
 }
 
 
-/* FIM TITLE */
+/* FIM FILTRO */
 
 
 /*INICIO DETALHES-PRODUTO*/
@@ -950,13 +958,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .detalhes-produto .wrapper .detalhes-imagem {
-    background: url("http://lorempixel.com/1180/590/cats") no-repeat;
-    background-size: cover;
-    background-position: center center;
     width: 100%;
     height: 590px;
     margin-bottom: 30px;
     position: relative;
+}
+
+.detalhes-produto .wrapper .detalhes-imagem:first-of-type(img) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 1180px;
+    height: 590px;
 }
 
 .detalhes-produto .wrapper .detalhes-imagem ul {
@@ -964,6 +978,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     right: 10px;
     bottom: 0px;
     overflow: hidden;
+    z-index: 10;
 }
 
 .detalhes-produto .wrapper .detalhes-imagem ul li {
@@ -1065,61 +1080,69 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM ABOUT*/
 
 
-/*INICIO CONTACTO*/
+/*INICIO FORM*/
 
-.contacto {
+.form {
     margin: 60px 0 100px 0;
 }
 
-.contacto .wrapper {
-
-}
-
-.contacto .wrapper .wrapper-input {
+.form .wrapper {
     width: 575px;
     overflow: hidden;
     margin: 0 auto;
 }
 
-.contacto .wrapper .wrapper-input article {
+.form .wrapper article {
     float: left;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-.contacto .wrapper .wrapper-input article p{
+.form .wrapper article p{
     font-family: lato, sans-serif;
     font-size: 12px;
     color: #666;
     text-transform: uppercase;
-    margin: 20px 0 5px 0;
+    margin: 20px 0 10px 0;
 }
 
-.contacto .wrapper .wrapper-input article input {
+.form .wrapper article input {
     font-family: lato, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #666;
-    padding: 5px;
+    padding: 0 5px;
+    line-height: 40px;
 }
 
-.contacto .wrapper .wrapper-input article.input-grande input {
+.form .wrapper article.input-grande input {
     width: 560px;
-
 }
 
-.contacto .wrapper .wrapper-input article.input-pequeno input {
+.form .wrapper article.input-pequeno input {
     width: 263px;
 }
 
-.contacto .wrapper .wrapper-input article.input-grande textarea {
+.form .wrapper article.input-checkbox {
+    text-align: center;
+    width: 100%;
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.form .wrapper article.input-grande textarea {
     width: 568px;
     height: 200px;
     resize: none;
+    border: 1px solid #cecece;
 }
 
-.contacto .wrapper .wrapper-input article.input-pequeno:nth-child(2n) input {
+.form .wrapper article.input-pequeno:nth-child(2n) input {
     margin-right: 20px;
 }
 
-.contacto .wrapper .wrapper-input a {
+.form .wrapper a {
     clear: both;
     position: relative;
     top: 30px;
@@ -1137,14 +1160,14 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: content-box;
 }
 
-/*FIM CONTACTO*/
+/*FIM FORM*/
 
 
 /*INICIO LISTA-CHECKOUT*/
 
 .lista-checkout {
-    margin-bottom: 50px;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .lista-checkout .wrapper table {
@@ -1273,6 +1296,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .lista-checkout .wrapper table tr .table-value {
     color: orange;
     text-align: center;
+    background-color: #f9f9f9;
 }
 
 .lista-checkout .wrapper a {
@@ -1297,3 +1321,61 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: content-box;
 }
 /*FIM LISTA-CHECKOUT*/
+
+/* INICIO SECTION-SERRA */
+
+.serra {
+    text-align: center;
+    overflow: hidden;
+    height: 30px;
+    margin: 50px 0;
+}
+
+.serra .wrapper .dente {
+    height: 20px;
+    width: 20px;
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+    transform: rotate(45deg);
+    display: inline-block;
+    margin-right: 3px;
+
+}
+/* FIM SECTION-SERRA */
+
+/* INICIO SHIPPING */
+.shipping {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shipping .wrapper {
+    border: 1px solid #e5e5e5;
+}
+
+.shipping .wrapper .form .wrapper {
+    border: 0;
+}
+
+.shipping .wrapper .form .wrapper h2 {
+    font-style: normal;
+    font-weight: 300;
+}
+
+.shipping .wrapper .form .wrapper h2.total {
+    color: orange;
+}
+
+.shipping .wrapper .form .wrapper table {
+    margin: 0 auto;
+}
+
+.shipping .wrapper .form .wrapper table td {
+    text-align: right;
+}
+
+.shipping .wrapper .form .wrapper table td:nth-child(1n+3) {
+    text-align: left;
+}
+
+/* FIM SHIPPING */

@@ -28,6 +28,22 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--    FONTS-->
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,400italic,700italic,300italic' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+           $('.detalhes-produto .wrapper .detalhes-imagem ul li').click(function(e){
+               e.preventDefault();
+               var imgSrc = $(this).find('img').attr('src');
+               $('.detalhes-imagem > img').attr('src',imgSrc);
+           })
+        });
+
+    </script>
+
+
 </head>
 
 <body>
@@ -85,10 +101,12 @@
     <section class="detalhes-produto">
         <div class="wrapper">
            <div class="detalhes-imagem">
+                  <!-- TODO: colocar img -->
+                  <img src="http://lorempixel.com/1180/590/cats" alt="">
                    <ul>
-                       <li><img src="http://lorempixel.com/100/100/cats" alt=""></li>
-                       <li><img src="http://lorempixel.com/100/100/cats" alt=""></li>
-                       <li><img src="http://lorempixel.com/100/100/cats" alt=""></li>
+                       <li><img src="http://lorempixel.com/1180/590/nature" alt=""></li>
+                       <li><img src="http://lorempixel.com/1180/590/animals" alt=""></li>
+                       <li><img src="http://lorempixel.com/1180/590/fashion" alt=""></li>
                    </ul>
            </div>
            <div class="detalhes-texto">
