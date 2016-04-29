@@ -885,8 +885,22 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 10px;
 }
 
-.title .wrapper h1 span {
+.title .wrapper h1 span.searchresult {
     font-weight: 300;
+}
+
+.title .wrapper a {
+    line-height: 50px;
+    width: 210px;
+    border: 1px solid #333;
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+    font-family: lato, sans-serif;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border-radius: 1px;
 }
 
 /* FIM TITLE */
@@ -1352,9 +1366,10 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     transform: rotate(45deg);
     display: inline-block;
     margin-right: 3px;
-
 }
+
 /* FIM SERRA */
+
 
 /* INICIO SHIPPING */
 .shipping {
@@ -1395,12 +1410,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 
 
-/*INICIO LOGIN*/
+/*INICIO LOGO LOGIN*/
 .logologin {
-    padding: 50px;
+    padding: 50px 0;
 }
 
-.logologin .wrapper a {
+.logologin a {
     line-height: 85px;
     width: 85px;
     background-color: #e8e8e8;
@@ -1414,20 +1429,15 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     color: #fff;
     margin: auto;
 }
+/* FIM LOGO LOGIN */
 
+
+/* INICIO CARD */
 .card {
 
 }
 
-.card > .wrapper {
-
-}
-
-.card .wrapper .wraplogin section .wrapper {
-    width: 85%;
-}
-
-.card .wrapper .wraplogin {
+.card>.wrapper {
     width: 400px;
     margin: 0 auto;
     box-shadow: 1px 1px 20px #666;
@@ -1436,16 +1446,31 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     width: 500px;
 }
 
-.card .wrapper .wraplogin .title {
+.card .wrapper section .wrapper {
+    width: 85%;
+}
+
+.card .wrapper .title {
     margin-bottom: 0;
 }
 
-.card .wrapper .wraplogin .title .wrapper h1 {
+.card .wrapper .title .wrapper h1 {
     font-weight: bold;
     padding: 30px;
 }
 
-.card .wrapper .wraplogin .form .wrapper .wrapper2 a.no-account{
+.card .wrapper .form {
+    margin: 20px 0;
+}
+
+.card .wrapper .form .wrapper .wrapper2 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.card .wrapper .form .wrapper .wrapper2 a.no-account{
     background: none;
     color: orange;
     padding: 0;
@@ -1453,20 +1478,15 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-transform: none;
     font-style: italic;
     position: relative;
-    top: -10px;
+    top: 10px;
     font-size: 12px;
     margin: 0 auto;
+    line-height: normal;
     border: none;
 }
 
-.card .wrapper .wraplogin .form .wrapper .wrapper2 {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    padding-bottom: 20px;
-}
 
-/*FIM LOGIN*/
+/*FIM CARD*/
 
 
 
@@ -1478,4 +1498,5 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .teste .wrap input {
     width: 100%;
     box-sizing: border-box;
+    outline: none;
 }
