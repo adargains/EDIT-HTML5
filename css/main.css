@@ -56,8 +56,8 @@ header {
     position: relative;
     top: 0;
     width: 100%;
-    z-index: 10;
     font-family: Lato, sans-serif;
+    z-index: 9;
 }
 
 header .wrapper {
@@ -272,6 +272,8 @@ header .wrapper aside .busca:hover {
     background-size: cover;
     background-position: center center;
     position: relative;
+    top: -116px;
+    z-index: 1;
 }
 
 .hero article h1,
@@ -1108,6 +1110,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     width: 560px;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
 }
 
 .form .wrapper .wrapper2 article {
@@ -1131,6 +1134,8 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding: 0 5px;
     line-height: 40px;
     border: 1px solid #cecece;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .form .wrapper .wrapper2 article.input-grande {
@@ -1142,18 +1147,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     width: 46%;
 }
 
-.form .wrapper .wrapper2 article input {
-    width: 100%;
-    box-sizing: border-box;
+.form .wrapper .wrapper2 article input[type=checkbox] {
+    width: auto;
 }
 
 .form .wrapper .wrapper2 article.input-checkbox {
+    position: relative;
     text-align: center;
-    width: 100%;
+    width: 50%;
     font-family: lato, sans-serif;
     font-size: 14px;
     color: #666;
-    margin: 10px 0;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .form .wrapper .wrapper2 article.input-grande textarea {
@@ -1164,7 +1171,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     border: 1px solid #cecece;
 }
 
-.form .wrapper .wrapper2 article.input-pequeno:nth-child(3n) {
+.form .wrapper .wrapper2 article.input-pequeno:nth-child(2n) {
     float: right;
 }
 
@@ -1189,20 +1196,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM FORM*/
 
 
-/*INICIO LISTA-CHECKOUT*/
+/*INICIO TABELA*/
 
-.lista-checkout {
+.tabela {
     overflow: hidden;
     margin-bottom: 100px;
 }
 
-.lista-checkout .wrapper table {
+.tabela .wrapper table {
     border: none;
     border-collapse: collapse;
     margin-bottom: 30px;
 }
 
-.lista-checkout .wrapper table tr th {
+.tabela .wrapper table tr th {
     font-family: lato,sans-serif;
     color: #999;
     font-weight: 400;
@@ -1212,71 +1219,71 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding-bottom: 5px;
 }
 
-.lista-checkout .wrapper table tr {
+.tabela .wrapper table tr {
     border-bottom: 1px solid #e5e5e5;
 }
 
-.lista-checkout .wrapper table tr:last-child {
+.tabela .wrapper table tr:last-child {
     border-bottom: 0;
 }
 
-.lista-checkout .wrapper table tr td {
+.tabela .wrapper table tr td {
     font-family: lato, sans-serif;
     font-size: 14px;
     color: #333;
     padding: 10px 10px 10px 0;
 }
 
-.lista-checkout .wrapper table .table-product {
+.tabela .wrapper table .table-product {
     width: 100px;
     padding-left:0;
 }
 
-.lista-checkout .wrapper table .table-product img {
+.tabela .wrapper table .table-product img {
     width: 100px;
     height: 100px;
 
 }
 
-.lista-checkout .wrapper table tr.table-product-row td.table-desc .table-desc-title {
+.tabela .wrapper table tr.table-product-row td.table-desc .table-desc-title {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     margin: 2px 0;
 }
 
-.lista-checkout .wrapper table .table-product-row td.table-desc p.table-desc-ref {
+.tabela .wrapper table .table-product-row td.table-desc p.table-desc-ref {
     font-size: 12px;
     font-style: italic;
     color: #666;
     margin: 2px 0;
 }
 
-.lista-checkout .wrapper table tr .table-desc {
+.tabela .wrapper table tr .table-desc {
     width: 590px;
 }
 
-.lista-checkout .wrapper table tr .table-color {
+.tabela .wrapper table tr .table-color {
     width: 140px;
 }
 
-.lista-checkout .wrapper table tr .table-size {
+.tabela .wrapper table tr .table-size {
     width: 120px;
 }
 
-.lista-checkout .wrapper table tr .table-qty {
+.tabela .wrapper table tr .table-qty {
     width: 105px;
     position: relative;
 }
 
-.lista-checkout .wrapper table tr td.table-qty ul {
+.tabela .wrapper table tr td.table-qty ul {
     position: absolute;
     display: block;
     top: 50px;
     left: 15px;
 }
 
-.lista-checkout .wrapper table tr td.table-qty ul li {
+.tabela .wrapper table tr td.table-qty ul li {
     width: 11px;
     line-height: 11px;
     font-size: 9px;
@@ -1286,53 +1293,53 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-align: center;
 }
 
-.lista-checkout .wrapper table tr td.table-qty ul li a {
+.tabela .wrapper table tr td.table-qty ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-.lista-checkout .wrapper table tr .table-amount {
+.tabela .wrapper table tr .table-amount {
     width: 80px;
     padding-left: 10px;
 }
 
-.lista-checkout .wrapper table tr td.table-amount {
+.tabela .wrapper table tr td.table-amount {
     text-align: right;
     padding-right: 10px;
 }
 
-.lista-checkout .wrapper table tr td.table-amount a {
+.tabela .wrapper table tr td.table-amount a {
     text-decoration: none;
     color: #333;
 }
 
-.lista-checkout .wrapper table tr td.table-amount a:after {
+.tabela .wrapper table tr td.table-amount a:after {
     content: "\f00d";
     font-family: fontawesome;
     margin-left: 10px;
 }
 
-.lista-checkout .wrapper table tr .table-subtotal {
+.tabela .wrapper table tr .table-subtotal {
     width: 800px;
     text-align: right;
     font-weight: 600;
     background-color: #f9f9f9;
 }
 
-.lista-checkout .wrapper table tr .table-value {
+.tabela .wrapper table tr .table-value {
     color: orange;
     text-align: center;
     background-color: #f9f9f9;
 }
 
-.lista-checkout .wrapper a {
+.tabela .wrapper a {
     font-family: lato, sans-serif;
     color: #333;
     font-size: 14px;
 }
 
 
-.lista-checkout .wrapper .lista-checkout-order-now {
+.tabela .wrapper .tabela-order-now {
     float: right;
     text-align: center;
     display: block;
@@ -1346,7 +1353,96 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     font-family: lato, sans-serif;
     box-sizing: content-box;
 }
-/*FIM LISTA-CHECKOUT*/
+
+
+/*FIM TABELA*/
+
+/* TABELA2 */
+.tabela2 .wrapper article {
+    font-family: lato, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.tabela2 .wrapper article ul {
+    overflow: hidden;
+}
+
+.tabela2 .wrapper article>ul>li{
+    float: left;
+    padding: 5px;
+    margin: 0;
+}
+
+.tabela2 .wrapper article.tabela-header {
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.tabela2 .wrapper article.tabela-row {
+    font-size: 14px;
+    color: #333;
+    padding: 25px 0;
+}
+
+.tabela2 .wrapper article.tabela-footer {
+    font-size: 14px;
+    color: #333;
+}
+
+.tabela2 .wrapper article ul li.tabela-orderno {
+    width: 120px;
+}
+
+.tabela2 .wrapper article ul li.tabela-orderdate {
+    width: 120px;
+}
+
+.tabela2 .wrapper article ul li.tabela-products {
+    width: 550px;
+}
+
+.tabela2 .wrapper article ul li.tabela-status {
+    width: 100px;
+}
+
+.tabela2 .wrapper article ul li.tabela-shipdate {
+    width: 120px;
+}
+
+.tabela2 .wrapper article ul li.tabela-total {
+    width: 110px;
+    text-align: right;
+}
+
+.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper {
+    overflow: hidden;
+}
+
+.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper img {
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper ul li {
+    margin: 2px 5px 0 5px;
+    padding: 0;
+}
+
+.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper ul li.tabela-products-title {
+
+}
+
+.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper ul li.tabela-products-ref {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+    text-transform: none;
+}
+
+
 
 
 /* INICIO SERRA */
@@ -1377,7 +1473,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin-bottom: 50px;
 }
 
-.shipping .wrapper {
+.shipping>.wrapper {
     border: 1px solid #e5e5e5;
 }
 
