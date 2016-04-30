@@ -40,7 +40,10 @@ h4 {
 }
 
 h5 {
-    color: red;
+    font-size: 12px;
+    font-family: lato, sans-serif;
+    color: #666;
+    font-style: italic;
 }
 
 ul {
@@ -1196,258 +1199,185 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM FORM*/
 
 
-/*INICIO TABELA*/
-
-.tabela {
-    overflow: hidden;
-    margin-bottom: 100px;
-}
-
-.tabela .wrapper table {
-    border: none;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-.tabela .wrapper table tr th {
-    font-family: lato,sans-serif;
-    color: #999;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 12px;
-    text-align: left;
-    padding-bottom: 5px;
-}
-
-.tabela .wrapper table tr {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.tabela .wrapper table tr:last-child {
-    border-bottom: 0;
-}
-
-.tabela .wrapper table tr td {
-    font-family: lato, sans-serif;
-    font-size: 14px;
-    color: #333;
-    padding: 10px 10px 10px 0;
-}
-
-.tabela .wrapper table .table-product {
-    width: 100px;
-    padding-left:0;
-}
-
-.tabela .wrapper table .table-product img {
-    width: 100px;
-    height: 100px;
-
-}
-
-.tabela .wrapper table tr.table-product-row td.table-desc .table-desc-title {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 2px 0;
-}
-
-.tabela .wrapper table .table-product-row td.table-desc p.table-desc-ref {
-    font-size: 12px;
-    font-style: italic;
-    color: #666;
-    margin: 2px 0;
-}
-
-.tabela .wrapper table tr .table-desc {
-    width: 590px;
-}
-
-.tabela .wrapper table tr .table-color {
-    width: 140px;
-}
-
-.tabela .wrapper table tr .table-size {
-    width: 120px;
-}
-
-.tabela .wrapper table tr .table-qty {
-    width: 105px;
-    position: relative;
-}
-
-.tabela .wrapper table tr td.table-qty ul {
-    position: absolute;
-    display: block;
-    top: 50px;
-    left: 15px;
-}
-
-.tabela .wrapper table tr td.table-qty ul li {
-    width: 11px;
-    line-height: 11px;
-    font-size: 9px;
-    background-color: #333;
-    margin-bottom: 2px;
-    padding: 0;
-    text-align: center;
-}
-
-.tabela .wrapper table tr td.table-qty ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.tabela .wrapper table tr .table-amount {
-    width: 80px;
-    padding-left: 10px;
-}
-
-.tabela .wrapper table tr td.table-amount {
-    text-align: right;
-    padding-right: 10px;
-}
-
-.tabela .wrapper table tr td.table-amount a {
-    text-decoration: none;
-    color: #333;
-}
-
-.tabela .wrapper table tr td.table-amount a:after {
-    content: "\f00d";
-    font-family: fontawesome;
-    margin-left: 10px;
-}
-
-.tabela .wrapper table tr .table-subtotal {
-    width: 800px;
-    text-align: right;
-    font-weight: 600;
-    background-color: #f9f9f9;
-}
-
-.tabela .wrapper table tr .table-value {
-    color: orange;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-.tabela .wrapper a {
-    font-family: lato, sans-serif;
-    color: #333;
-    font-size: 14px;
-}
 
 
-.tabela .wrapper .tabela-order-now {
-    float: right;
-    text-align: center;
-    display: block;
-    line-height: 50px;
-    width: 194px;
-    border: 1px solid #e67429;
-    background-color: #f68236;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: lato, sans-serif;
-    box-sizing: content-box;
-}
-
-
-/*FIM TABELA*/
-
-/* TABELA2 */
-.tabela2 .wrapper article {
+/* TABELA */
+.tabela .wrapper article {
     font-family: lato, sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.tabela2 .wrapper article ul {
-    overflow: hidden;
+.tabela .wrapper article ul {
+    display: table-row;
 }
 
-.tabela2 .wrapper article>ul>li{
-    float: left;
-    padding: 5px;
+.tabela .wrapper article.tabela-row-history ul {
+    display: inline-block;
+}
+
+.tabela .wrapper article>ul>li{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 0;
     margin: 0;
 }
 
-.tabela2 .wrapper article.tabela-header {
+.tabela .wrapper article.tabela-row-history>ul>li{
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.tabela .wrapper article.tabela-header {
     color: #999;
     font-size: 12px;
     line-height: 30px;
 }
 
-.tabela2 .wrapper article.tabela-row {
+.tabela .wrapper article.tabela-row-shopping,
+.tabela .wrapper article.tabela-row-history {
     font-size: 14px;
     color: #333;
-    padding: 25px 0;
+    padding: 10px 0;
 }
 
-.tabela2 .wrapper article.tabela-footer {
+.tabela .wrapper article.tabela-footer {
     font-size: 14px;
     color: #333;
 }
 
-.tabela2 .wrapper article ul li.tabela-orderno {
-    width: 120px;
+.tabela .wrapper article ul li.tabela-product {
+    width: 130px;
 }
 
-.tabela2 .wrapper article ul li.tabela-orderdate {
-    width: 120px;
+.tabela .wrapper article ul li.tabela-product img {
+    width: 100px;
+    height: 100px;
 }
 
-.tabela2 .wrapper article ul li.tabela-products {
-    width: 550px;
+.tabela .wrapper article ul li.tabela-description {
+    width: 590px;
 }
 
-.tabela2 .wrapper article ul li.tabela-status {
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-description h3 {
+    font-weight: bold;
+}
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-description h5 {
+    margin: 0;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.tabela .wrapper article ul li.tabela-color {
+    width: 160px;
+}
+
+.tabela .wrapper article ul li.tabela-size {
+    width: 110px;
+}
+
+.tabela .wrapper article ul li.tabela-qty {
+    position: relative;
     width: 100px;
 }
 
-.tabela2 .wrapper article ul li.tabela-shipdate {
+.tabela .wrapper article ul li.tabela-amount {
+    width: 100px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-amount a {
+    color: #333;
+    text-decoration: none;
+}
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-amount a:after {
+    font-family: FontAwesome;
+    content: " \f00d";
+}
+
+
+.tabela .wrapper article ul li.tabela-orderno {
     width: 120px;
 }
 
-.tabela2 .wrapper article ul li.tabela-total {
+.tabela .wrapper article ul li.tabela-orderdate {
+    width: 120px;
+}
+
+.tabela .wrapper article ul li.tabela-products {
+    width: 550px;
+}
+
+.tabela .wrapper article ul li.tabela-status {
+    width: 100px;
+}
+
+.tabela .wrapper article ul li.tabela-shipdate {
+    width: 120px;
+}
+
+.tabela .wrapper article ul li.tabela-total {
     width: 110px;
     text-align: right;
 }
 
-.tabela2 .wrapper article ul li.tabela-products ul li {
+.tabela .wrapper article ul li.tabela-products ul li {
     overflow: hidden;
     margin-bottom: 20px;
 }
 
-.tabela2 .wrapper article ul li.tabela-products ul li:last-child {
+.tabela .wrapper article ul li.tabela-products ul li:last-child {
     margin-bottom: 0px;
 }
 
-.tabela2 .wrapper article ul li.tabela-products ul li img {
+.tabela .wrapper article ul li.tabela-products ul li img {
     height: 40px;
     width: 40px;
     float: left;
 }
 
-.tabela2 .wrapper article ul li.tabela-products ul li ul li {
+.tabela .wrapper article ul li.tabela-products ul li ul li {
     margin: 2px 5px 0 5px;
     padding: 0;
 }
 
-.tabela2 .wrapper article ul li.tabela-products ul li ul li.tabela-products-title {
+.tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-title {
 
 }
 
-.tabela2 .wrapper article ul li.tabela-products ul li ul li.tabela-products-ref {
+.tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-ref {
     font-size: 12px;
     color: #666;
     font-style: italic;
     text-transform: none;
 }
 
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
 
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li  a {
+    color: #333;
+    text-decoration: none;
+}
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li  a.qty-plus:after {
+    font-family: FontAwesome;
+    content: "\f0fe";
+}
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li  a.qty-minus:after {
+    font-family: FontAwesome;
+    content: "\f146";
+}
 
 
 /* INICIO SERRA */
