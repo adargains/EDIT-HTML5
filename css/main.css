@@ -1416,26 +1416,31 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-align: right;
 }
 
-.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper {
+.tabela2 .wrapper article ul li.tabela-products ul li {
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
-.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper img {
+.tabela2 .wrapper article ul li.tabela-products ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.tabela2 .wrapper article ul li.tabela-products ul li img {
     height: 40px;
     width: 40px;
     float: left;
 }
 
-.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper ul li {
+.tabela2 .wrapper article ul li.tabela-products ul li ul li {
     margin: 2px 5px 0 5px;
     padding: 0;
 }
 
-.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper ul li.tabela-products-title {
+.tabela2 .wrapper article ul li.tabela-products ul li ul li.tabela-products-title {
 
 }
 
-.tabela2 .wrapper article ul li.tabela-products .tabela-produto-wrapper ul li.tabela-products-ref {
+.tabela2 .wrapper article ul li.tabela-products ul li ul li.tabela-products-ref {
     font-size: 12px;
     color: #666;
     font-style: italic;
