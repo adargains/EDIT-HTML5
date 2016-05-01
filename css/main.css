@@ -743,7 +743,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM FOOTER*/
 
 
-
 /* INICIO BREADCRUMBS */
 
 .breadcrumbs {
@@ -753,7 +752,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .breadcrumbs .wrapper ul li {
     display: inline;
 }
-
 
 .breadcrumbs .wrapper ul li:not(:last-child):after {
     content: " /"
@@ -868,12 +866,10 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .lista-produto .wrapper .no-prod-in-cat a {
     text-decoration: none;
     color: orange;
-
-
 }
 
-/* FIM LISTA-PRODUTO */
 
+/* FIM LISTA-PRODUTO */
 
 
 /* INICIO TITLE */
@@ -907,6 +903,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-transform: uppercase;
     border-radius: 1px;
 }
+
 
 /* FIM TITLE */
 
@@ -1066,7 +1063,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM DETALHES-PRODUTO*/
 
 
-
 /*INICIO ABOUT*/
 
 .about {
@@ -1083,7 +1079,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-align: left;
 }
 
-.about .wrapper article:nth-child(2n){
+.about .wrapper article:nth-child(2n) {
     margin-left: 20px;
 }
 
@@ -1100,6 +1096,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: block;
 }
 
+
 /*FIM ABOUT*/
 
 
@@ -1109,20 +1106,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 60px 0 100px 0;
 }
 
-.form .wrapper .wrapper2 {
+.form .wrapper {
     width: 560px;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
 
-.form .wrapper .wrapper2 article {
+.form .wrapper article {
     float: left;
     text-align: left;
     margin-bottom: 10px;
 }
 
-.form .wrapper .wrapper2 article p{
+.form .wrapper article p {
     font-family: lato, sans-serif;
     font-size: 12px;
     color: #666;
@@ -1130,7 +1127,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 20px 0 10px 0;
 }
 
-.form .wrapper .wrapper2 article input {
+.form .wrapper article input {
     font-family: lato, sans-serif;
     font-size: 14px;
     color: #666;
@@ -1141,20 +1138,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: border-box;
 }
 
-.form .wrapper .wrapper2 article.input-grande {
+.form .wrapper article.input-grande {
     width: 560px;
     width: 100%;
 }
 
-.form .wrapper .wrapper2 article.input-pequeno {
+.form .wrapper article.input-pequeno {
     width: 46%;
 }
 
-.form .wrapper .wrapper2 article input[type=checkbox] {
+.form .wrapper article input[type=checkbox] {
     width: auto;
 }
 
-.form .wrapper .wrapper2 article.input-checkbox {
+.form .wrapper article.input-checkbox {
     position: relative;
     text-align: center;
     width: 50%;
@@ -1166,7 +1163,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     transform: translateX(-50%);
 }
 
-.form .wrapper .wrapper2 article.input-grande textarea {
+.form .wrapper article.input-grande textarea {
     width: 100%;
     height: 200px;
     resize: none;
@@ -1174,11 +1171,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     border: 1px solid #cecece;
 }
 
-.form .wrapper .wrapper2 article.input-pequeno:nth-child(2n) {
+.form .wrapper article.input-pequeno:nth-child(2n) {
     float: right;
 }
 
-.form .wrapper .wrapper2 a {
+.form .wrapper a {
     clear: both;
     position: relative;
     top: 30px;
@@ -1196,12 +1193,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: content-box;
 }
 
+
 /*FIM FORM*/
 
 
-
-
 /* TABELA */
+
 .tabela .wrapper article {
     font-family: lato, sans-serif;
     text-transform: uppercase;
@@ -1212,18 +1209,18 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: table-row;
 }
 
-.tabela .wrapper article.tabela-row-history ul {
-    display: inline-block;
-}
-
-.tabela .wrapper article>ul>li{
+.tabela .wrapper article>ul>li {
     display: table-cell;
     vertical-align: middle;
-    padding: 10px 0;
+    padding: 5px 0;
     margin: 0;
 }
 
-.tabela .wrapper article.tabela-row-history>ul>li{
+.tabela .wrapper article>ul>li:first-child {
+    padding-left: 10px;
+}
+
+.tabela .wrapper article.tabela-row-history>ul>li {
     display: inline-block;
     vertical-align: text-top;
     padding: 10px 0;
@@ -1243,9 +1240,41 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding: 10px 0;
 }
 
-.tabela .wrapper article.tabela-footer {
+.tabela .wrapper article.tabela-footer,
+.tabela .wrapper article.tabela-footer-cut {
     font-size: 14px;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 60px;
+    display: block;
+    margin: 5px 0;
+    border: none;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.tabela .wrapper article.tabela-footer ul li.footer-subtotal {
+    text-align: right;
+    width: 970px;
+}
+
+.tabela .wrapper article.tabela-footer ul li.footer-value {
+    color: orange;
+    text-align: left;
+    width: 90px;
+    padding-left: 22px;
+}
+
+.tabela .wrapper article.tabela-footer-cut ul li.footer-subtotal {
+    text-align: right;
+    width: 1050px;
+}
+
+.tabela .wrapper article.tabela-footer-cut ul li.footer-value {
+    color: orange;
+    text-align: left;
+    width: 90px;
+    padding-left: 22px;
 }
 
 .tabela .wrapper article ul li.tabela-product {
@@ -1257,8 +1286,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     height: 100px;
 }
 
-.tabela .wrapper article ul li.tabela-description {
+.tabela .wrapper article ul li.tabela-description-cut {
     width: 590px;
+}
+
+.tabela .wrapper article ul li.tabela-description {
+    width: 500px;
 }
 
 .tabela .wrapper article.tabela-row-shopping ul li.tabela-description h3 {
@@ -1272,7 +1305,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .tabela .wrapper article ul li.tabela-color {
-    width: 160px;
+    width: 150px;
 }
 
 .tabela .wrapper article ul li.tabela-size {
@@ -1286,8 +1319,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .tabela .wrapper article ul li.tabela-amount {
     width: 100px;
-    text-align: right;
-    padding-right: 20px;
 }
 
 .tabela .wrapper article.tabela-row-shopping ul li.tabela-amount a {
@@ -1300,17 +1331,17 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     content: " \f00d";
 }
 
-
 .tabela .wrapper article ul li.tabela-orderno {
-    width: 120px;
+    width: 130px;
+    padding-left: 10px;
 }
 
 .tabela .wrapper article ul li.tabela-orderdate {
-    width: 120px;
+    width: 140px;
 }
 
 .tabela .wrapper article ul li.tabela-products {
-    width: 550px;
+    width: 560px;
 }
 
 .tabela .wrapper article ul li.tabela-status {
@@ -1324,6 +1355,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .tabela .wrapper article ul li.tabela-total {
     width: 110px;
     text-align: right;
+}
+
+.tabela .wrapper article ul li.tabela-delete {
+    width: 60px;
+    text-align: center;
 }
 
 .tabela .wrapper article ul li.tabela-products ul li {
@@ -1346,9 +1382,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding: 0;
 }
 
-.tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-title {
-
-}
+.tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-title {}
 
 .tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-ref {
     font-size: 12px;
@@ -1364,20 +1398,34 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     left: 15px;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li  a {
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li a {
     color: #333;
     text-decoration: none;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li  a.qty-plus:after {
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li a.qty-plus:after {
     font-family: FontAwesome;
     content: "\f0fe";
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li  a.qty-minus:after {
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li a.qty-minus:after {
     font-family: FontAwesome;
     content: "\f146";
 }
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-delete a {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tabela .wrapper article.tabela-row-shopping ul li.tabela-delete a:after {
+    font-family: FontAwesome;
+    content: " \f00d";
+}
+
+
+/*FIM TABELA*/
 
 
 /* INICIO SERRA */
@@ -1399,10 +1447,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin-right: 3px;
 }
 
+
 /* FIM SERRA */
 
 
 /* INICIO SHIPPING */
+
 .shipping {
     text-align: center;
     margin-bottom: 50px;
@@ -1437,11 +1487,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-align: left;
 }
 
+
 /* FIM SHIPPING */
 
 
-
 /*INICIO LOGO LOGIN*/
+
 .logologin {
     padding: 50px 0;
 }
@@ -1460,13 +1511,14 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     color: #fff;
     margin: auto;
 }
+
+
 /* FIM LOGO LOGIN */
 
 
 /* INICIO CARD */
-.card {
 
-}
+.card {}
 
 .card>.wrapper {
     width: 400px;
@@ -1501,7 +1553,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding-bottom: 40px;
 }
 
-.card .wrapper .form .wrapper .wrapper2 a.no-account{
+.card .wrapper .form .wrapper .wrapper2 a.no-account {
     background: none;
     color: orange;
     padding: 0;
@@ -1518,8 +1570,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 
 /*FIM CARD*/
-
-
 
 .teste .wrap {
     width: 500px;
