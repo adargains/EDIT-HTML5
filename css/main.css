@@ -1525,7 +1525,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 0 auto;
     box-shadow: 1px 1px 20px #666;
     background-color: #fff;
-    margin: 0 auto;
+    margin: 50px auto;
     width: 500px;
 }
 
@@ -1543,17 +1543,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .card .wrapper .form {
-    margin: 20px 0;
+    margin: 0px;
+    padding: 0 0 50px 0;
 }
 
-.card .wrapper .form .wrapper .wrapper2 {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-    padding-bottom: 40px;
+.card .wrapper .form .wrapper article p span.forgotpassword {
+    color: orange;
+    text-transform: none;
+    font-style: italic;
+    float: right;
 }
 
-.card .wrapper .form .wrapper .wrapper2 a.no-account {
+
+.card .wrapper .form .wrapper a.no-account {
     background: none;
     color: orange;
     padding: 0;
@@ -1566,6 +1568,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 0 auto;
     line-height: normal;
     border: none;
+    margin-bottom: 10px;
 }
 
 
