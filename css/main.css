@@ -53,6 +53,20 @@ ul {
 }
 
 
+/*WRAPPER*/
+
+section .wrapper,
+footer .wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*WRAPPER*/
+
+
+
 /* INICIO HEADER*/
 
 header {
@@ -400,18 +414,6 @@ header .wrapper aside .busca:hover {
 /*FIM HERO*/
 
 
-/*WRAPPER*/
-
-section .wrapper,
-footer .wrapper {
-    width: 1180px;
-    margin: 0 auto;
-}
-
-
-/*WRAPPER*/
-
-
 /*INICIO GRELHA*/
 
 .grelha {
@@ -629,16 +631,25 @@ footer .wrapper {
 
 .barracinza .wrapper ul {
     background-color: #bbb;
-    overflow: hidden;
 }
 
 .barracinza .wrapper ul li {
-    height: 118px;
     float: left;
 }
 
-.barracinza .wrapper ul li img {
+.barracinza .wrapper ul li .wrap-img {
     height: 118px;
+    overflow: hidden;
+}
+
+.barracinza .wrapper ul li .wrap-img img {
+    height: 100%;
+
+    transition: transform .5s ease-in-out;
+}
+
+.barracinza .wrapper ul li .wrap-img img:hover {
+    transform: scale(1.05);
 }
 
 .barracinza .wrapper .showmemore {
@@ -659,7 +670,6 @@ footer .wrapper {
 .cinza-detalhes .wrapper .showmemore {
     display: block;
 }
-
 
 /*FIM BARRA CINZA*/
 
@@ -809,6 +819,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .lista-produto .wrapper .produtos ul {
     list-style: none;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .lista-produto .wrapper .produtos ul li {
@@ -825,15 +836,21 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin-right: 0;
 }
 
-.lista-produto .wrapper .produtos ul li img {
+.lista-produto .wrapper .produtos ul li .wrap-img {
+    overflow: hidden;
     width: 208px;
     height: 256px;
+}
+
+.lista-produto .wrapper .produtos ul li img {
+    width: 100%;
+    height: 100%;
 
     transition: transform .5s ease-in-out;
 }
 
-.lista-produto .wrapper .produtos ul li img:hover {
-    transform: scale(1.05, 1.05);
+.lista-produto .wrapper .produtos ul li .wrap-img img:hover {
+    transform: scale(1.05);
 }
 
 .lista-produto .wrapper .paginas {
@@ -954,11 +971,13 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: inline-block;
     width: 178px;
     position: absolute;
-    height: 0;
+    top: 35px;
+    max-height: 0;
     overflow: hidden;
     background-color: #fff;
+    z-index: 10;
 
-    transition: height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
 }
 
 .filtro .wrapper ul li {
@@ -968,7 +987,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .filtro .wrapper article:hover ul {
-    height: auto;
+    max-height: 300px;
 }
 
 .filtro .wrapper article ul li:hover {
