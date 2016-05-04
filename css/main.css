@@ -66,7 +66,6 @@ footer .wrapper {
 /*WRAPPER*/
 
 
-
 /* INICIO HEADER*/
 
 header {
@@ -644,7 +643,6 @@ header .wrapper aside .busca:hover {
 
 .barracinza .wrapper ul li .wrap-img img {
     height: 100%;
-
     transition: transform .5s ease-in-out;
 }
 
@@ -670,6 +668,7 @@ header .wrapper aside .busca:hover {
 .cinza-detalhes .wrapper .showmemore {
     display: block;
 }
+
 
 /*FIM BARRA CINZA*/
 
@@ -845,7 +844,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .lista-produto .wrapper .produtos ul li img {
     width: 100%;
     height: 100%;
-
     transition: transform .5s ease-in-out;
 }
 
@@ -976,7 +974,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     overflow: hidden;
     background-color: #fff;
     z-index: 10;
-
     transition: max-height 1s ease-in-out;
 }
 
@@ -1587,7 +1584,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     text-decoration: none;
 }
 
-
 .card .wrapper .form .wrapper a.no-account {
     background: none;
     color: orange;
@@ -1602,7 +1598,6 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 
 /*FIM CARD*/
-
 
 
 /* INICIO BASKET */
@@ -1620,7 +1615,6 @@ ul.basket {
     z-index: 3;
     overflow: hidden;
     box-sizing: border-box;
-
     transition: all .3s ease-in-out;
 }
 
@@ -1630,7 +1624,7 @@ ul.basket li {
     overflow: hidden;
 }
 
-ul.basket li *{
+ul.basket li * {
     float: left;
     margin-right: 10px;
     font-size: 12px;
@@ -1652,13 +1646,10 @@ ul.basket li.basket-row .basket-value {
     width: 60px;
 }
 
-
-
 ul.basket li.basket-row a:after {
     font-family: FontAwesome;
     content: "\f00d";
     margin-left: 15px;
-
 }
 
 ul.basket li.basket-row a {
@@ -1672,7 +1663,6 @@ ul.basket li.basket-row a:hover {
 
 li.bask>a {
     padding: 10px 20px;
-
     transition: border .3s ease-in-out;
 }
 
@@ -1693,9 +1683,7 @@ ul.basket li.basket-total {
     border: 0;
 }
 
-ul.basket li.basket-total {
-
-}
+ul.basket li.basket-total {}
 
 ul.basket li.basket-total strong {
     font-size: 12px;
@@ -1724,5 +1712,6 @@ ul.basket li.basket-total a {
 ul.basket li.basket-total a:hover {
     text-decoration: none;
 }
+
 
 /* FIM BASKET */
