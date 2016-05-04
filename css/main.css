@@ -1596,7 +1596,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     top: 10px;
     font-size: 12px;
     line-height: normal;
-    border: none;
+    border: 1px solid #e5e5e5;
     margin-bottom: 10px;
 }
 
@@ -1609,15 +1609,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 ul.basket {
     width: 427px;
+    max-height: 0;
     position: absolute;
-    border: 1px solid #e5e5e5;
+    border: 0;
     top: 75px;
     right: 0px;
     background-color: #fff;
     z-index: 1;
     line-height: 87px;
-    display: none;
     z-index: 3;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    transition: all .3s ease-in-out;
 }
 
 ul.basket li {
@@ -1668,6 +1672,8 @@ ul.basket li.basket-row a:hover {
 
 li.bask>a {
     padding: 10px 20px;
+
+    transition: border .3s ease-in-out;
 }
 
 header .wrapper aside .usuario ul li.bask:hover >a {
@@ -1679,7 +1685,8 @@ header .wrapper aside .usuario ul li.bask:hover >a {
 }
 
 header .wrapper aside .usuario ul li.bask:hover .basket {
-    display: block;
+    max-height: 500px;
+    border: 1px solid #e5e5e5;
 }
 
 ul.basket li.basket-total {
