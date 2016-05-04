@@ -794,12 +794,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     font-weight: normal;
 }
 
-.lista-produto .wrapper .produtos a {
+.lista-produto .wrapper a {
     font-family: georgia;
     font-style: italic;
     color: #666;
     margin-bottom: 40px;
-    display: block;
 }
 
 .lista-produto .wrapper .produtos a:after {
@@ -809,9 +808,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .lista-produto .wrapper .produtos ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+    margin-top: 20px;
 }
 
 .lista-produto .wrapper .produtos ul li {
@@ -831,6 +828,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 .lista-produto .wrapper .produtos ul li img {
     width: 208px;
     height: 256px;
+
+    transition: transform .5s ease-in-out;
+}
+
+.lista-produto .wrapper .produtos ul li img:hover {
+    transform: scale(1.05, 1.05);
 }
 
 .lista-produto .wrapper .paginas {
@@ -951,8 +954,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: inline-block;
     width: 178px;
     position: absolute;
-    display: none;
+    height: 0;
+    overflow: hidden;
     background-color: #fff;
+
+    transition: height 1s ease-in-out;
 }
 
 .filtro .wrapper ul li {
@@ -962,7 +968,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .filtro .wrapper article:hover ul {
-    display: block;
+    height: auto;
 }
 
 .filtro .wrapper article ul li:hover {
@@ -1181,7 +1187,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     float: right;
 }
 
-.form .wrapper a {
+.form .wrapper>a {
     clear: both;
     position: relative;
     top: 30px;
@@ -1553,25 +1559,23 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding: 0 0 50px 0;
 }
 
-.card .wrapper .form .wrapper article p span.forgotpassword {
+.card .wrapper .form .wrapper article p a.forgotpassword {
     color: orange;
     text-transform: none;
     font-style: italic;
+    font-size: 12px;
     float: right;
+    text-decoration: none;
 }
 
 
 .card .wrapper .form .wrapper a.no-account {
     background: none;
     color: orange;
-    padding: 0;
-    margin: 0;
     text-transform: none;
     font-style: italic;
-    position: relative;
     top: 10px;
     font-size: 12px;
-    margin: 0 auto;
     line-height: normal;
     border: none;
     margin-bottom: 10px;
@@ -1581,6 +1585,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 /*FIM CARD*/
 
 
+
 /* INICIO BASKET */
 
 ul.basket {
@@ -1588,7 +1593,7 @@ ul.basket {
     position: absolute;
     border: 1px solid #e5e5e5;
     top: 75px;
-    right: 1px;
+    right: 0px;
     background-color: #fff;
     z-index: 1;
     line-height: 87px;
@@ -1651,6 +1656,7 @@ header .wrapper aside .usuario ul li.bask:hover >a {
     border-bottom: 0;
     z-index: 5;
     background-color: #fff;
+    padding: 10px 19px;
 }
 
 header .wrapper aside .usuario ul li.bask:hover .basket {
