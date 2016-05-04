@@ -378,6 +378,11 @@ header .wrapper aside .busca:hover {
     border: 1px solid #fff;
 }
 
+.hero ul li a.selected {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
 .prev,
 .next {
     position: absolute;
@@ -408,7 +413,6 @@ header .wrapper aside .busca:hover {
 .next {
     right: 0px;
 }
-
 
 /*FIM HERO*/
 
@@ -754,6 +758,30 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     content: '\f16d';
 }
 
+footer .wrapper .social .redesocial a[href*="pinterest"]:before {
+    font-family: FontAwesome;
+    content: '\f0d2';
+}
+
+footer .wrapper .social .redesocial a[href*="plus.google"]:before {
+    font-family: FontAwesome;
+    content: '\f0d5';
+}
+
+footer .wrapper .social .redesocial a[href*="youtube"]:before {
+    font-family: FontAwesome;
+    content: '\f16a';
+}
+
+footer .wrapper .social .redesocial a[href*="tumblr"]:before {
+    font-family: FontAwesome;
+    content: '\f173';
+}
+
+footer .wrapper .social .redesocial a[href*="linkedin"]:before {
+    font-family: FontAwesome;
+    content: '\f0e1';
+}
 
 /*FIM FOOTER*/
 
@@ -866,6 +894,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: content-box;
     background-color: #333;
     color: #fff;
+}
+
+.lista-produto .wrapper .paginas ul li.selected {
+    background-color: #fff;
+    border: 1px solid #666;
+    color: #666;
 }
 
 .lista-produto .wrapper .paginas ul li:hover {
@@ -1071,6 +1105,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     border: 1px solid #333;
 }
 
+.detalhes-produto .wrapper .detalhes-texto ul li.selected {
+    background-color: #333;
+    color: #fff;
+}
+
 .detalhes-produto .wrapper .detalhes-texto ul li:hover {
     background-color: #333;
     color: #fff;
@@ -1155,6 +1194,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 20px 0 10px 0;
 }
 
+.form .wrapper article p span {
+    text-transform: none;
+    font-style: italic;
+}
+
 .form .wrapper article input {
     font-family: lato, sans-serif;
     font-size: 14px;
@@ -1166,13 +1210,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: border-box;
 }
 
-.form .wrapper article.input-grande {
-    width: 560px;
+.form .wrapper article.input-100 {
     width: 100%;
 }
 
-.form .wrapper article.input-pequeno {
+.form .wrapper article.input-75 {
+    width: 72%;
+}
+
+.form .wrapper article.input-50 {
     width: 46%;
+}
+
+.form .wrapper article.input-25 {
+    width: 22%;
 }
 
 .form .wrapper article input[type=checkbox] {
@@ -1191,7 +1242,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     transform: translateX(-50%);
 }
 
-.form .wrapper article.input-grande textarea {
+.form .wrapper article.input-100 textarea {
     width: 100%;
     height: 200px;
     resize: none;
@@ -1199,11 +1250,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     border: 1px solid #cecece;
 }
 
-.form .wrapper article.input-pequeno:nth-child(2n) {
+.form .wrapper article.input-50:nth-child(2n) {
     float: right;
 }
 
-.form .wrapper>a {
+.form .wrapper article.input-25:nth-child(2n) {
+    float: right;
+}
+
+.form .wrapper article.input-75:nth-child(2n) {
+    float: right;
+}
+
+.form .wrapper .wrapper2>a {
     clear: both;
     position: relative;
     top: 30px;
@@ -1223,6 +1282,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 
 /*FIM FORM*/
+
+
+/********************************
+*********************************
+
+TODO: Refazer a tabela colocando uma li por linha, com divs dentro. O cabeçalho é o first child e o valor total é o last child
+
+Refazer nas páginas shopping cart, shopping cart cut e order history.
+
+*********************************
+*********************************/
+
+
 
 
 /* TABELA */
@@ -1592,10 +1664,27 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     top: 10px;
     font-size: 12px;
     line-height: normal;
-    border: 1px solid #e5e5e5;
     margin-bottom: 10px;
+    border: 0;
 }
 
+.form .wrapper>a {
+    clear: both;
+    position: relative;
+    top: 30px;
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    width: 194px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    box-sizing: content-box;
+}
 
 /*FIM CARD*/
 
