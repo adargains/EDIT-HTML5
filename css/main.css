@@ -53,6 +53,19 @@ ul {
 }
 
 
+/*WRAPPER*/
+
+section .wrapper,
+footer .wrapper {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*WRAPPER*/
+
+
 /* INICIO HEADER*/
 
 header {
@@ -365,6 +378,11 @@ header .wrapper aside .busca:hover {
     border: 1px solid #fff;
 }
 
+.hero ul li a.selected {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
 .prev,
 .next {
     position: absolute;
@@ -396,20 +414,7 @@ header .wrapper aside .busca:hover {
     right: 0px;
 }
 
-
 /*FIM HERO*/
-
-
-/*WRAPPER*/
-
-section .wrapper,
-footer .wrapper {
-    width: 1180px;
-    margin: 0 auto;
-}
-
-
-/*WRAPPER*/
 
 
 /*INICIO GRELHA*/
@@ -629,16 +634,24 @@ footer .wrapper {
 
 .barracinza .wrapper ul {
     background-color: #bbb;
-    overflow: hidden;
 }
 
 .barracinza .wrapper ul li {
-    height: 118px;
     float: left;
 }
 
-.barracinza .wrapper ul li img {
+.barracinza .wrapper ul li .wrap-img {
     height: 118px;
+    overflow: hidden;
+}
+
+.barracinza .wrapper ul li .wrap-img img {
+    height: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+.barracinza .wrapper ul li .wrap-img img:hover {
+    transform: scale(1.05);
 }
 
 .barracinza .wrapper .showmemore {
@@ -745,6 +758,30 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     content: '\f16d';
 }
 
+footer .wrapper .social .redesocial a[href*="pinterest"]:before {
+    font-family: FontAwesome;
+    content: '\f0d2';
+}
+
+footer .wrapper .social .redesocial a[href*="plus.google"]:before {
+    font-family: FontAwesome;
+    content: '\f0d5';
+}
+
+footer .wrapper .social .redesocial a[href*="youtube"]:before {
+    font-family: FontAwesome;
+    content: '\f16a';
+}
+
+footer .wrapper .social .redesocial a[href*="tumblr"]:before {
+    font-family: FontAwesome;
+    content: '\f173';
+}
+
+footer .wrapper .social .redesocial a[href*="linkedin"]:before {
+    font-family: FontAwesome;
+    content: '\f0e1';
+}
 
 /*FIM FOOTER*/
 
@@ -794,12 +831,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     font-weight: normal;
 }
 
-.lista-produto .wrapper .produtos a {
+.lista-produto .wrapper a {
     font-family: georgia;
     font-style: italic;
     color: #666;
     margin-bottom: 40px;
-    display: block;
 }
 
 .lista-produto .wrapper .produtos a:after {
@@ -809,8 +845,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 .lista-produto .wrapper .produtos ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -828,9 +863,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin-right: 0;
 }
 
-.lista-produto .wrapper .produtos ul li img {
+.lista-produto .wrapper .produtos ul li .wrap-img {
+    overflow: hidden;
     width: 208px;
     height: 256px;
+}
+
+.lista-produto .wrapper .produtos ul li img {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+.lista-produto .wrapper .produtos ul li .wrap-img img:hover {
+    transform: scale(1.05);
 }
 
 .lista-produto .wrapper .paginas {
@@ -848,6 +894,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: content-box;
     background-color: #333;
     color: #fff;
+}
+
+.lista-produto .wrapper .paginas ul li.selected {
+    background-color: #fff;
+    border: 1px solid #666;
+    color: #666;
 }
 
 .lista-produto .wrapper .paginas ul li:hover {
@@ -951,8 +1003,12 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     display: inline-block;
     width: 178px;
     position: absolute;
-    display: none;
+    top: 35px;
+    max-height: 0;
+    overflow: hidden;
     background-color: #fff;
+    z-index: 10;
+    transition: max-height 1s ease-in-out;
 }
 
 .filtro .wrapper ul li {
@@ -962,7 +1018,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 }
 
 .filtro .wrapper article:hover ul {
-    display: block;
+    max-height: 300px;
 }
 
 .filtro .wrapper article ul li:hover {
@@ -1049,6 +1105,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     border: 1px solid #333;
 }
 
+.detalhes-produto .wrapper .detalhes-texto ul li.selected {
+    background-color: #333;
+    color: #fff;
+}
+
 .detalhes-produto .wrapper .detalhes-texto ul li:hover {
     background-color: #333;
     color: #fff;
@@ -1133,6 +1194,11 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     margin: 20px 0 10px 0;
 }
 
+.form .wrapper article p span {
+    text-transform: none;
+    font-style: italic;
+}
+
 .form .wrapper article input {
     font-family: lato, sans-serif;
     font-size: 14px;
@@ -1144,13 +1210,20 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     box-sizing: border-box;
 }
 
-.form .wrapper article.input-grande {
-    width: 560px;
+.form .wrapper article.input-100 {
     width: 100%;
 }
 
-.form .wrapper article.input-pequeno {
+.form .wrapper article.input-75 {
+    width: 72%;
+}
+
+.form .wrapper article.input-50 {
     width: 46%;
+}
+
+.form .wrapper article.input-25 {
+    width: 22%;
 }
 
 .form .wrapper article input[type=checkbox] {
@@ -1169,7 +1242,7 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     transform: translateX(-50%);
 }
 
-.form .wrapper article.input-grande textarea {
+.form .wrapper article.input-100 textarea {
     width: 100%;
     height: 200px;
     resize: none;
@@ -1177,11 +1250,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     border: 1px solid #cecece;
 }
 
-.form .wrapper article.input-pequeno:nth-child(2n) {
+.form .wrapper article.input-50:nth-child(2n) {
     float: right;
 }
 
-.form .wrapper a {
+.form .wrapper article.input-25:nth-child(2n) {
+    float: right;
+}
+
+.form .wrapper article.input-75:nth-child(2n) {
+    float: right;
+}
+
+.form .wrapper .wrapper2>a {
     clear: both;
     position: relative;
     top: 30px;
@@ -1201,6 +1282,19 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 
 /*FIM FORM*/
+
+
+/********************************
+*********************************
+
+TODO: Refazer a tabela colocando uma li por linha, com divs dentro. O cabeçalho é o first child e o valor total é o last child
+
+Refazer nas páginas shopping cart, shopping cart cut e order history.
+
+*********************************
+*********************************/
+
+
 
 
 /* TABELA */
@@ -1553,30 +1647,44 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
     padding: 0 0 50px 0;
 }
 
-.card .wrapper .form .wrapper article p span.forgotpassword {
+.card .wrapper .form .wrapper article p a.forgotpassword {
     color: orange;
     text-transform: none;
     font-style: italic;
+    font-size: 12px;
     float: right;
+    text-decoration: none;
 }
-
 
 .card .wrapper .form .wrapper a.no-account {
     background: none;
     color: orange;
-    padding: 0;
-    margin: 0;
     text-transform: none;
     font-style: italic;
-    position: relative;
     top: 10px;
     font-size: 12px;
-    margin: 0 auto;
     line-height: normal;
-    border: none;
     margin-bottom: 10px;
+    border: 0;
 }
 
+.form .wrapper>a {
+    clear: both;
+    position: relative;
+    top: 30px;
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    width: 194px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    box-sizing: content-box;
+}
 
 /*FIM CARD*/
 
@@ -1585,15 +1693,18 @@ footer .wrapper .social .redesocial a[href*="instagram"]:before {
 
 ul.basket {
     width: 427px;
+    max-height: 0;
     position: absolute;
-    border: 1px solid #e5e5e5;
+    border: 0;
     top: 75px;
-    right: 1px;
+    right: 0px;
     background-color: #fff;
     z-index: 1;
     line-height: 87px;
-    display: none;
     z-index: 3;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
 }
 
 ul.basket li {
@@ -1602,7 +1713,7 @@ ul.basket li {
     overflow: hidden;
 }
 
-ul.basket li *{
+ul.basket li * {
     float: left;
     margin-right: 10px;
     font-size: 12px;
@@ -1624,13 +1735,10 @@ ul.basket li.basket-row .basket-value {
     width: 60px;
 }
 
-
-
 ul.basket li.basket-row a:after {
     font-family: FontAwesome;
     content: "\f00d";
     margin-left: 15px;
-
 }
 
 ul.basket li.basket-row a {
@@ -1644,6 +1752,7 @@ ul.basket li.basket-row a:hover {
 
 li.bask>a {
     padding: 10px 20px;
+    transition: border .3s ease-in-out;
 }
 
 header .wrapper aside .usuario ul li.bask:hover >a {
@@ -1651,20 +1760,23 @@ header .wrapper aside .usuario ul li.bask:hover >a {
     border-bottom: 0;
     z-index: 5;
     background-color: #fff;
+<<<<<<< HEAD
     box-sizing: content-box:
+=======
+    padding: 10px 19px;
+>>>>>>> origin/master
 }
 
 header .wrapper aside .usuario ul li.bask:hover .basket {
-    display: block;
+    max-height: 500px;
+    border: 1px solid #e5e5e5;
 }
 
 ul.basket li.basket-total {
     border: 0;
 }
 
-ul.basket li.basket-total {
-
-}
+ul.basket li.basket-total {}
 
 ul.basket li.basket-total strong {
     font-size: 12px;
@@ -1693,5 +1805,6 @@ ul.basket li.basket-total a {
 ul.basket li.basket-total a:hover {
     text-decoration: none;
 }
+
 
 /* FIM BASKET */
