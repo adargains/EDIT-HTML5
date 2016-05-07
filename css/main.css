@@ -1651,6 +1651,7 @@ header .wrapper aside .usuario ul li.bask:hover >a {
     border-bottom: 0;
     z-index: 5;
     background-color: #fff;
+    box-sizing: content-box:
 }
 
 header .wrapper aside .usuario ul li.bask:hover .basket {
