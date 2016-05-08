@@ -414,6 +414,7 @@ header .wrapper aside .busca:hover {
     right: 0px;
 }
 
+
 /*FIM HERO*/
 
 
@@ -782,6 +783,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     font-family: FontAwesome;
     content: '\f0e1';
 }
+
 
 /*FIM FOOTER*/
 
@@ -1284,64 +1286,45 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 /*FIM FORM*/
 
 
-/********************************
-*********************************
-
-TODO: Refazer a tabela colocando uma li por linha, com divs dentro. O cabeçalho é o first child e o valor total é o last child
-
-Refazer nas páginas shopping cart, shopping cart cut e order history.
-
-*********************************
-*********************************/
-
-
-
-
 /* TABELA */
 
-.tabela .wrapper article {
+.tabela .wrapper ul>li {
     font-family: lato, sans-serif;
     text-transform: uppercase;
     border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    position: relative;
 }
 
-.tabela .wrapper article ul {
-    display: table-row;
+.tabela .wrapper ul li div {
+    float: left;
 }
 
-.tabela .wrapper article>ul>li {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 5px 0;
-    margin: 0;
+.tabela .wrapper ul li.tabela-row-shopping div {
+    position: relative;
+    top: 50px;
+    transform: translateY(-50%);
 }
 
-.tabela .wrapper article>ul>li:first-child {
+.tabela .wrapper ul>li div:first-child {
     padding-left: 10px;
 }
 
-.tabela .wrapper article.tabela-row-history>ul>li {
-    display: inline-block;
-    vertical-align: text-top;
-    padding: 10px 0;
-    margin: 0;
-}
-
-.tabela .wrapper article.tabela-header {
+.tabela .wrapper ul li.tabela-header {
     color: #999;
     font-size: 12px;
     line-height: 30px;
 }
 
-.tabela .wrapper article.tabela-row-shopping,
-.tabela .wrapper article.tabela-row-history {
+.tabela .wrapper ul li.tabela-row-shopping,
+.tabela .wrapper ul li.tabela-row-history {
     font-size: 14px;
     color: #333;
     padding: 10px 0;
 }
 
-.tabela .wrapper article.tabela-footer,
-.tabela .wrapper article.tabela-footer-cut {
+.tabela .wrapper ul li.tabela-footer,
+.tabela .wrapper ul li.tabela-footer-cut {
     font-size: 14px;
     background-color: #f9f9f9;
     color: #333;
@@ -1353,173 +1336,182 @@ Refazer nas páginas shopping cart, shopping cart cut e order history.
     font-weight: bold;
 }
 
-.tabela .wrapper article.tabela-footer ul li.footer-subtotal {
+.tabela .wrapper ul li.tabela-footer div.footer-subtotal {
     text-align: right;
     width: 970px;
 }
 
-.tabela .wrapper article.tabela-footer ul li.footer-value {
+.tabela .wrapper ul li.tabela-footer div.footer-value {
     color: orange;
     text-align: left;
     width: 90px;
     padding-left: 22px;
 }
 
-.tabela .wrapper article.tabela-footer-cut ul li.footer-subtotal {
+.tabela .wrapper ul li.tabela-footer-cut div.footer-subtotal {
     text-align: right;
     width: 1050px;
 }
 
-.tabela .wrapper article.tabela-footer-cut ul li.footer-value {
+.tabela .wrapper ul li.tabela-footer-cut div.footer-value {
     color: orange;
     text-align: left;
     width: 90px;
     padding-left: 22px;
 }
 
-.tabela .wrapper article ul li.tabela-product {
+.tabela .wrapper ul li div.tabela-product {
     width: 130px;
 }
 
-.tabela .wrapper article ul li.tabela-product img {
+.tabela .wrapper ul li div.tabela-product img {
     width: 100px;
     height: 100px;
 }
 
-.tabela .wrapper article ul li.tabela-description-cut {
+.tabela .wrapper ul li div.tabela-description-cut {
     width: 590px;
 }
 
-.tabela .wrapper article ul li.tabela-description {
+.tabela .wrapper ul li div.tabela-description {
     width: 500px;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-description h3 {
+.tabela .wrapper ul li.tabela-row-shopping div.tabela-description h3,
+.tabela .wrapper ul li.tabela-row-shopping div.tabela-description-cut h3,
+.tabela .wrapper ul li.tabela-row-history ul li ul li.tabela-products-title {
     font-weight: bold;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-description h5 {
+.tabela .wrapper ul li.tabela-row-shopping div.tabela-description h5,
+.tabela .wrapper ul li.tabela-row-shopping div.tabela-description-cut h5,
+.tabela .wrapper ul li.tabela-row-history ul li ul li.tabela-products-ref {
     margin: 0;
     font-weight: 400;
     text-transform: none;
 }
 
-.tabela .wrapper article ul li.tabela-color {
+.tabela .wrapper ul li.tabela-row-history ul li img {
+    margin-right: 10px;
+}
+
+.tabela .wrapper ul li div.tabela-color {
     width: 150px;
 }
 
-.tabela .wrapper article ul li.tabela-size {
-    width: 110px;
+.tabela .wrapper ul li div.tabela-size {
+    width: 100px;
 }
 
-.tabela .wrapper article ul li.tabela-qty {
+.tabela .wrapper ul li div.tabela-qty {
     position: relative;
     width: 100px;
 }
 
-.tabela .wrapper article ul li.tabela-amount {
+.tabela .wrapper ul li div.tabela-amount {
     width: 100px;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-amount a {
+.tabela .wrapper ul li.tabela-row-shopping div.tabela-amount a {
     color: #333;
     text-decoration: none;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-amount a:after {
+.tabela .wrapper ul li.tabela-row-shopping div.tabela-amount a:after {
     font-family: FontAwesome;
     content: " \f00d";
 }
 
-.tabela .wrapper article ul li.tabela-orderno {
+.tabela .wrapper ul li div.tabela-orderno {
     width: 130px;
     padding-left: 10px;
 }
 
-.tabela .wrapper article ul li.tabela-orderdate {
+.tabela .wrapper ul li div.tabela-orderdate {
     width: 140px;
 }
 
-.tabela .wrapper article ul li.tabela-products {
+.tabela .wrapper ul li div.tabela-products {
     width: 560px;
 }
 
-.tabela .wrapper article ul li.tabela-status {
+.tabela .wrapper ul li div.tabela-status {
     width: 100px;
 }
 
-.tabela .wrapper article ul li.tabela-shipdate {
+.tabela .wrapper ul li div.tabela-shipdate {
     width: 120px;
 }
 
-.tabela .wrapper article ul li.tabela-total {
+.tabela .wrapper ul li div.tabela-total {
     width: 110px;
     text-align: right;
 }
 
-.tabela .wrapper article ul li.tabela-delete {
+.tabela .wrapper ul li div.tabela-delete {
     width: 60px;
     text-align: center;
 }
 
-.tabela .wrapper article ul li.tabela-products ul li {
+.tabela .wrapper ul li div.tabela-products ul li {
     overflow: hidden;
     margin-bottom: 20px;
+    border: 0;
 }
 
-.tabela .wrapper article ul li.tabela-products ul li:last-child {
+.tabela .wrapper ul li div.tabela-products ul li:last-child {
     margin-bottom: 0px;
 }
 
-.tabela .wrapper article ul li.tabela-products ul li img {
+.tabela .wrapper ul li div.tabela-products ul li img {
     height: 40px;
     width: 40px;
     float: left;
 }
 
-.tabela .wrapper article ul li.tabela-products ul li ul li {
+.tabela .wrapper li div.tabela-products ul li ul li {
     margin: 2px 5px 0 5px;
     padding: 0;
 }
 
-.tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-title {}
+.tabela .wrapper li div.tabela-products ul li ul li.tabela-products-title {}
 
-.tabela .wrapper article ul li.tabela-products ul li ul li.tabela-products-ref {
+.tabela .wrapper li div.tabela-products ul li ul li.tabela-products-ref {
     font-size: 12px;
     color: #666;
     font-style: italic;
     text-transform: none;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul {
+.tabela .wrapper li.tabela-row-shopping div.tabela-qty ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li a {
+.tabela .wrapper li.tabela-row-shopping div.tabela-qty ul li a {
     color: #333;
     text-decoration: none;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li a.qty-plus:after {
+.tabela .wrapper li.tabela-row-shopping div.tabela-qty ul li a.qty-plus:after {
     font-family: FontAwesome;
     content: "\f0fe";
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-qty ul li a.qty-minus:after {
+.tabela .wrapper li.tabela-row-shopping div.tabela-qty ul li a.qty-minus:after {
     font-family: FontAwesome;
     content: "\f146";
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-delete a {
+.tabela .wrapper li.tabela-row-shopping div.tabela-delete a {
     color: #333;
     text-decoration: none;
     text-align: center;
 }
 
-.tabela .wrapper article.tabela-row-shopping ul li.tabela-delete a:after {
+.tabela .wrapper li.tabela-row-shopping div.tabela-delete a:after {
     font-family: FontAwesome;
     content: " \f00d";
 }
@@ -1686,6 +1678,7 @@ Refazer nas páginas shopping cart, shopping cart cut e order history.
     box-sizing: content-box;
 }
 
+
 /*FIM CARD*/
 
 
@@ -1695,7 +1688,7 @@ ul.basket {
     width: 427px;
     max-height: 0;
     position: absolute;
-    border: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
     top: 75px;
     right: 0px;
     background-color: #fff;
@@ -1703,7 +1696,6 @@ ul.basket {
     line-height: 87px;
     z-index: 3;
     overflow: hidden;
-    box-sizing: border-box;
     transition: all .3s ease-in-out;
 }
 
@@ -1753,18 +1745,15 @@ ul.basket li.basket-row a:hover {
 li.bask>a {
     padding: 10px 20px;
     transition: border .3s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 header .wrapper aside .usuario ul li.bask:hover >a {
     border: 1px solid #e5e5e5;
-    border-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
     z-index: 5;
     background-color: #fff;
-<<<<<<< HEAD
-    box-sizing: content-box:
-=======
-    padding: 10px 19px;
->>>>>>> origin/master
+    box-sizing: content-box;
 }
 
 header .wrapper aside .usuario ul li.bask:hover .basket {
