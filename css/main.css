@@ -1537,8 +1537,32 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     transform: rotate(45deg);
     display: inline-block;
     margin-right: 3px;
+    position: relative;
 }
 
+.serra .wrapper .dente:before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+    display: inline-block;
+    position: absolute;
+    right: 19px;
+    bottom: -23px;
+}
+
+.serra .wrapper .dente:after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+    display: inline-block;
+    position: absolute;
+    top: -21px;
+    left: 21px;
+}
 
 /* FIM SERRA */
 
