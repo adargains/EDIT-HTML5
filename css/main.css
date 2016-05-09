@@ -52,6 +52,11 @@ ul {
     margin: 0;
 }
 
+input[type=text]:focus {
+    border: 2px solid;
+    outline: none;
+}
+
 
 /*WRAPPER*/
 
@@ -1729,7 +1734,7 @@ ul.basket {
     position: absolute;
     border: 0px solid rgba(0, 0, 0, 0);
     top: 75px;
-    right: 1px;
+    right: 0px;
     background-color: #fff;
     line-height: 87px;
 
