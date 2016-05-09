@@ -1346,6 +1346,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     text-align: left;
     width: 90px;
     padding-left: 22px;
+    font-weight: 400;
 }
 
 .tabela .wrapper ul li.tabela-footer-cut div.footer-subtotal {
@@ -1358,6 +1359,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     text-align: left;
     width: 90px;
     padding-left: 22px;
+    font-weight: 400;
 }
 
 .tabela .wrapper ul li div.tabela-product {
@@ -1381,6 +1383,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 .tabela .wrapper ul li.tabela-row-shopping div.tabela-description-cut h3,
 .tabela .wrapper ul li.tabela-row-history ul li ul li.tabela-products-title {
     font-weight: bold;
+    margin-bottom: 2px;
 }
 
 .tabela .wrapper ul li.tabela-row-shopping div.tabela-description h5,
@@ -1546,7 +1549,6 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     width: 20px;
     border-bottom: 2px solid orange;
     border-right: 2px solid orange;
-    display: inline-block;
     position: absolute;
     right: 19px;
     bottom: -23px;
@@ -1558,7 +1560,6 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     width: 20px;
     border-bottom: 2px solid orange;
     border-right: 2px solid orange;
-    display: inline-block;
     position: absolute;
     top: -21px;
     left: 21px;
@@ -1708,19 +1709,37 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 
 /* INICIO BASKET */
 
+header .wrapper aside .usuario ul li.bask>a {
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    transition: all .3s ease-in-out;
+}
+
+header .wrapper aside .usuario ul li.bask:hover >a {
+    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    background-color: #fff;
+    box-sizing: content-box;
+}
+
 ul.basket {
     width: 427px;
     max-height: 0;
     position: absolute;
-    border: 1px solid rgba(0, 0, 0, 0);
+    border: 0px solid rgba(0, 0, 0, 0);
     top: 75px;
-    right: 0px;
+    right: 1px;
     background-color: #fff;
-    z-index: 1;
     line-height: 87px;
-    z-index: 3;
+
     overflow: hidden;
     transition: all .3s ease-in-out;
+}
+
+header .wrapper aside .usuario ul li.bask:hover .basket {
+    max-height: 500px;
+    border: 1px solid #e5e5e5;
 }
 
 ul.basket li {
@@ -1764,25 +1783,6 @@ ul.basket li.basket-row a {
 
 ul.basket li.basket-row a:hover {
     text-decoration: none;
-}
-
-li.bask>a {
-    padding: 10px 20px;
-    transition: border .3s ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0);
-}
-
-header .wrapper aside .usuario ul li.bask:hover >a {
-    border: 1px solid #e5e5e5;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    z-index: 5;
-    background-color: #fff;
-    box-sizing: content-box;
-}
-
-header .wrapper aside .usuario ul li.bask:hover .basket {
-    max-height: 500px;
-    border: 1px solid #e5e5e5;
 }
 
 ul.basket li.basket-total {
