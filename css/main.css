@@ -1841,3 +1841,64 @@ ul.basket li.basket-total a:hover {
 
 
 /* FIM BASKET */
+
+
+.circulo {
+    padding: 50px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.circulo span.fundo {
+    position: absolute;
+    display: block;
+    border: 10px solid #e5e5e5;
+    border-top: 10px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    right: 10px;
+    transform: rotate(45deg);
+
+    transition: all .3s ease-in-out;
+}
+
+.circulo span.frente {
+    position: absolute;
+    display: block;
+    border: 10px solid rgba(0,0,0,0);
+    border-top: 10px solid red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    right: 10px;
+    transform: rotate(45deg);
+
+    transition: all .3s ease-in-out;
+}
+
+.circulo span.fundo:hover {
+    border-top: 10px solid red;
+
+}
+
+.circulo span.frente:hover {
+    transform: rotate(90deg);
+}
+
+.circulo em {
+    font-family: lato, sans-serif;
+    position: absolute;
+}
+
+.circulo em.em0 {
+    top: -30px;
+    right: 60px;
+}
+
+.circulo em.em25 {
+
+}
