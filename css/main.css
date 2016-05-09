@@ -1,4 +1,4 @@
-body {
+body, figure {
     margin: 0;
     padding: 0;
 }
@@ -52,7 +52,15 @@ ul {
     margin: 0;
 }
 
-input[type=text]:focus {
+textarea {
+    padding: 5px;
+    font-family: lato, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+input:focus,
+textarea:focus {
     border: 2px solid;
     outline: none;
 }
@@ -142,7 +150,7 @@ header .wrapper aside span {
     font-size: 14px;
 }
 
-header.home .wrapper aside .usuario ul li span {
+header.home .wrapper aside .usuario>ul>li>span {
     color: #cecece;
 }
 
@@ -188,7 +196,7 @@ header .wrapper aside .usuario ul li.logado span a {
     color: orange;
 }
 
-header.home .wrapper aside .usuario ul li a {
+header.home .wrapper aside .usuario>ul>li>a {
     color: #cecece;
 }
 
@@ -646,17 +654,17 @@ header .wrapper aside .busca:hover {
     float: left;
 }
 
-.barracinza .wrapper ul li .wrap-img {
+.barracinza .wrapper ul li figure {
     height: 118px;
     overflow: hidden;
 }
 
-.barracinza .wrapper ul li .wrap-img img {
+.barracinza .wrapper ul li figure img {
     height: 100%;
     transition: transform .5s ease-in-out;
 }
 
-.barracinza .wrapper ul li .wrap-img img:hover {
+.barracinza .wrapper ul li figure img:hover {
     transform: scale(1.05);
 }
 
@@ -745,7 +753,7 @@ footer .wrapper .social .redesocial a {
 }
 
 footer .wrapper .redesocial a:hover {
-    color: #666;
+    color: #999;
     text-decoration: none;
 }
 
@@ -870,7 +878,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     margin-right: 0;
 }
 
-.lista-produto .wrapper .produtos ul li .wrap-img {
+.lista-produto .wrapper .produtos ul li figure {
     overflow: hidden;
     width: 208px;
     height: 256px;
@@ -882,7 +890,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     transition: transform .5s ease-in-out;
 }
 
-.lista-produto .wrapper .produtos ul li .wrap-img img:hover {
+.lista-produto .wrapper .produtos ul li figure img:hover {
     transform: scale(1.05);
 }
 
@@ -1570,6 +1578,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     left: 21px;
 }
 
+
 /* FIM SERRA */
 
 
@@ -1717,7 +1726,6 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 header .wrapper aside .usuario ul li.bask>a {
     padding: 10px 20px;
     border: 1px solid rgba(0, 0, 0, 0);
-
     transition: all .3s ease-in-out;
 }
 
@@ -1726,6 +1734,14 @@ header .wrapper aside .usuario ul li.bask:hover >a {
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     background-color: #fff;
     box-sizing: content-box;
+}
+
+header.home .wrapper aside .usuario ul li.bask:hover >a {
+    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    background-color: #fff;
+    box-sizing: content-box;
+    color: #333;
 }
 
 ul.basket {
@@ -1737,7 +1753,6 @@ ul.basket {
     right: 0px;
     background-color: #fff;
     line-height: 87px;
-
     overflow: hidden;
     transition: all .3s ease-in-out;
 }
