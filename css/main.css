@@ -1683,24 +1683,40 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     border: 1px solid #e5e5e5;
 }
 
-.shipping .wrapper .form .wrapper {
+.shipping .wrapper .form .wrapper .summary {
     border: 0;
+    font-size: 18px;
+    font-style: italic;
+    font-family: georgia;
+    color: #666;
 }
 
-.shipping .wrapper .form .wrapper h2 {
-    font-style: normal;
-    font-weight: 300;
+.shipping .wrapper .form .wrapper .summary ul li {
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
-.shipping .wrapper .form .wrapper h2.total {
+.shipping .wrapper .form .wrapper .summary ul li span {
+    width: 48%;
+    display: block;
+    float: left;
+}
+
+.shipping .wrapper .form .wrapper .summary ul li span:nth-child(odd) {
+    padding-right: 5px;
+    text-align: right;
+}
+
+.shipping .wrapper .form .wrapper .summary ul li span:nth-child(even) {
+    padding-left: 5px;
+    text-align: left;
+}
+
+.shipping .wrapper .form .wrapper .summary ul li:last-child  {
     color: orange;
 }
 
-.shipping .wrapper .form .wrapper table {
-    margin: 0 auto;
-}
-
-.shipping .wrapper .form .wrapper table td {
+.shipping .wrapper .form .wrapper .summary ul li span:nth-child(2n + 1) {
     text-align: right;
 }
 
@@ -1821,7 +1837,7 @@ ul.basket {
     position: absolute;
     border: 0px solid rgba(0, 0, 0, 0);
     top: 76px;
-    right: 1px;
+    right: 0;
     background-color: #fff;
     line-height: 87px;
     overflow: hidden;
