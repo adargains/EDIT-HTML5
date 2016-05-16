@@ -1190,9 +1190,18 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 
 .form .wrapper {
     width: 560px;
-    overflow: hidden;
     margin: 0 auto;
     position: relative;
+}
+
+.form .wrapper:before,
+.form .wrapper:after {
+    display: block;
+    content: "";
+}
+
+.form .wrapper:after {
+    clear: both;
 }
 
 .form .wrapper article {
@@ -1295,6 +1304,84 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     box-sizing: content-box;
 }
 
+.form .wrapper article ul {
+    width: 100%;
+    position: absolute;
+    max-height: 42px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.form .wrapper article ul:hover {
+    max-height: 600px;
+}
+
+.form .wrapper article ul li{
+    background-color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    font-family: lato, sans-serif;
+    color: #666;
+    padding: 0 10px;
+    border: 1px solid #cecece;
+    border-top: none;
+}
+
+.form .wrapper article ul li:first-of-type {
+    border: 1px solid #cecece;
+}
+
+.form .wrapper article ul li:first-of-type:after {
+    content: "bb";
+    float: right;
+}
+
+.form .wrapper article ul li:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.form .wrapper article ul li#creditcard:after {
+    font-family: FontAwesome;
+    content: "\f283";
+    float: right;
+}
+
+.form .wrapper article ul li#paypal:after {
+    font-family: FontAwesome;
+    content: "\f1ed";
+    float: right;
+}
+
+.form .wrapper article ul li#cash:after {
+    font-family: FontAwesome;
+    content: "\f0d6";
+    float: right;
+}
+
+
+.form .wrapper>a {
+    clear: both;
+    position: relative;
+    top: 30px;
+    margin: 30px auto;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    width: 194px;
+    border: 1px solid #e67429;
+    background-color: #f68236;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    box-sizing: content-box;
+    z-index: 5;
+}
+
+#ordernow {
+    top: 50px;
+}
 
 /*FIM FORM*/
 
@@ -1698,25 +1785,6 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     margin-bottom: 10px;
     border: 0;
 }
-
-.form .wrapper>a {
-    clear: both;
-    position: relative;
-    top: 30px;
-    margin: 30px auto;
-    text-align: center;
-    display: block;
-    line-height: 50px;
-    width: 194px;
-    border: 1px solid #e67429;
-    background-color: #f68236;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: lato, sans-serif;
-    box-sizing: content-box;
-}
-
 
 /*FIM CARD*/
 
