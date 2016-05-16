@@ -711,6 +711,11 @@ footer .wrapper ul:last-child {
     border: 0;
 }
 
+footer .wrapper ul:last-child ul {
+    height: auto;
+    width: auto;
+}
+
 footer .wrapper ul li {
     margin: 0 0 8px 0;
     font-family: 'Lato', sans-serif;
@@ -737,6 +742,7 @@ footer .wrapper .social .redesocial {
 
 footer .wrapper .social .redesocial li {
     display: inline-block;
+    margin-bottom: 0;
 }
 
 footer .wrapper .social .redesocial a {
@@ -750,6 +756,10 @@ footer .wrapper .social .redesocial a {
     text-align: center;
     text-decoration: none;
     color: #333;
+}
+
+footer .wrapper .social .redesocial li:last-child a {
+    margin: 0;
 }
 
 footer .wrapper .redesocial a:hover {
