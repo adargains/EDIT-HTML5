@@ -1837,7 +1837,7 @@ ul.basket {
     position: absolute;
     border: 0px solid rgba(0, 0, 0, 0);
     top: 76px;
-    right: 0;
+    right: 1px;
     background-color: #fff;
     line-height: 87px;
     overflow: hidden;
