@@ -1210,6 +1210,10 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     margin-bottom: 10px;
 }
 
+.form .wrapper .option {
+    margin-bottom: 50px;
+}
+
 .form .wrapper article p {
     font-family: lato, sans-serif;
     font-size: 12px;
@@ -1274,14 +1278,8 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     border: 1px solid #cecece;
 }
 
-.form .wrapper article.input-50:nth-child(2n) {
-    float: right;
-}
-
-.form .wrapper article.input-25:nth-child(2n) {
-    float: right;
-}
-
+.form .wrapper article.input-25:nth-child(2n),
+.form .wrapper article.input-50:nth-child(2n),
 .form .wrapper article.input-75:nth-child(2n) {
     float: right;
 }
@@ -1313,7 +1311,7 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 }
 
 .form .wrapper article ul:hover {
-    max-height: 600px;
+    max-height: 300px;
 }
 
 .form .wrapper article ul li{
@@ -1332,7 +1330,8 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
 }
 
 .form .wrapper article ul li:first-of-type:after {
-    content: "bb";
+    font-family: FontAwesome;
+    content: "\f0d7";
     float: right;
 }
 
@@ -1341,22 +1340,21 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     color: #fff;
 }
 
-.form .wrapper article ul li#creditcard:after {
+.form .wrapper article ul li:after {
     font-family: FontAwesome;
-    content: "\f283";
     float: right;
+}
+
+.form .wrapper article ul li#creditcard:after {
+    content: "\f283";
 }
 
 .form .wrapper article ul li#paypal:after {
-    font-family: FontAwesome;
     content: "\f1ed";
-    float: right;
 }
 
 .form .wrapper article ul li#cash:after {
-    font-family: FontAwesome;
     content: "\f0d6";
-    float: right;
 }
 
 
@@ -1378,11 +1376,6 @@ footer .wrapper .social .redesocial a[href*="linkedin"]:before {
     box-sizing: content-box;
     z-index: 5;
 }
-
-#ordernow {
-    top: 50px;
-}
-
 /*FIM FORM*/
 
 
@@ -1817,8 +1810,8 @@ ul.basket {
     max-height: 0;
     position: absolute;
     border: 0px solid rgba(0, 0, 0, 0);
-    top: 75px;
-    right: 0px;
+    top: 76px;
+    right: 1px;
     background-color: #fff;
     line-height: 87px;
     overflow: hidden;
